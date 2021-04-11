@@ -31,11 +31,12 @@ String.prototype.ltrim = function(s) {
 }
 
 String.prototype.mayBeFillHost = function(host) {
-    if (!this) return '';
-    if (this.startsWith(host)) return this;
-    if (this.startsWith('//')) return host.split('//')[0] + this;
+    var url = this.trim();
+    if (!url) return '';
+    if (url.startsWith(host)) return url;
+    if (url.startsWith('//')) return host.split('//')[0] + url;
 
-    return host.rtrim('/') + '/' + this.ltrim('/');
+    return host.rtrim('/') + '/' + url.ltrim('/');
 };
 
 
