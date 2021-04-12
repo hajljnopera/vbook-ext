@@ -47,33 +47,58 @@ String.prototype.Q = function(e, q, i) {
         var _empty = Html.parse('').select('body');
 
         var els = e.select(q);
-        if (els == '' || els.size() == 0) return els;
+        if (els == '' || els.size() == 0) return _empty;
         if (i == undefined) return els.first();
-        if (i == -1) return els.last();
-        if (i > els.size()) return _empty;
 
-        return els.get(i);
+        if (typeof(i) == 'number') {
+            if (i == -1) return els.last();
+            if (i > els.size()) return _empty;
+
+            return els.get(i);
+        }
+        else {
+            if (i.remove) {
+                els.select(i.remove).remove();
+                return els;
+            }
+        }
     }
 }
 
 
 String.prototype.QA = function(e, q, o) {
     if (this == '$') {
-    var arr = [];
-    var els = e.select(q);
-    if (els == '' || els.size() == 0) return arr;
+        var arr = [];
+        var els = e.select(q);
+        o = o || {};
 
-    if (o && o.reverse) {
-        for (var i = els.size() - 1; i >= 0; i--) {
-            arr.push(els.get(i));
-        }
-    } else {
-        for (var i = 0; i < els.size(); i++) {
-            arr.push(els.get(i));
-        }
-    }
+        if (els == '' || els.size() == 0) return o.j ? '' : arr;
 
-    return arr;
+        var processItem = function(item) {
+            if (o.f) {
+                if (o.f(item)) arr.push(o.m ? o.m(item) : item);
+            }
+            else {
+                arr.push(o.m ? o.m(item) : item);
+            }
+        }
+
+        if (o.reverse) {
+            for (var i = els.size() - 1; i >= 0; i--) {
+                var item = els.get(i);
+                processItem(item);
+            }
+        } 
+        else {
+            for (var i = 0; i < els.size(); i++) {
+                var item = els.get(i);
+                processItem(item);
+            }
+        }
+
+        if (o.j && typeof(o.j) == 'string') return arr.join(o.j);
+
+        return arr;
     }
 }
 
