@@ -55,12 +55,11 @@ String.prototype.Q = function(e, q, i) {
             if (i > els.size()) return _empty;
 
             return els.get(i);
-        }
-        else {
+        } else {
             if (i.remove) {
                 els.select(i.remove).remove();
-                return els;
             }
+            return els;
         }
     }
 }
@@ -77,8 +76,7 @@ String.prototype.QA = function(e, q, o) {
         var processItem = function(item) {
             if (o.f) {
                 if (o.f(item)) arr.push(o.m ? o.m(item) : item);
-            }
-            else {
+            } else {
                 arr.push(o.m ? o.m(item) : item);
             }
         }
@@ -88,8 +86,7 @@ String.prototype.QA = function(e, q, o) {
                 var item = els.get(i);
                 processItem(item);
             }
-        } 
-        else {
+        } else {
             for (var i = 0; i < els.size(); i++) {
                 var item = els.get(i);
                 processItem(item);
@@ -101,4 +98,3 @@ String.prototype.QA = function(e, q, o) {
         return arr;
     }
 }
-
