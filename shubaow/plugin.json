@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "shubaow",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.shubaow.net",
+    "regexp": "(www|m)\\.shubaow\\.net/\\d+[_/]\\d+/?$",
+    "description": "Đọc truyện trên trang https://www.shubaow.net",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

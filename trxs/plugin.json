@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "trxs",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "http://trxs.cc",
+    "regexp": "trxs\\.cc/tongren/\\d+\\.html",
+    "description": "Đọc truyện trên trang http://trxs.cc",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
