@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "biqubao",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.biqubao.com",
+    "regexp": "(www|m)\\.biqubao\\.com/v?book/\\d+/?$",
+    "description": "Đọc truyện trên trang https://www.biqubao.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
