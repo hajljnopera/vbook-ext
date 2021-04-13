@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "manhwas",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://manhwas.men",
+    "regexp": "manhwas\\.men/manga/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://manhwas.men",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
