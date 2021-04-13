@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "author": "hajljnopera",
+    "description": "😢😢😢"
+  },
+  "data": [
+    {
+      "name": "qidian",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/plugin.zip",
+      "version": 1,
+      "source": "https://www.qidian.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/icon.png",
+      "description": "Đọc truyện trên trang https://www.qidian.com"
+    },
+    {
+      "name": "zongheng",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/zongheng/plugin.zip",
+      "version": 1,
+      "source": "http://www.zongheng.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/zongheng/icon.png",
+      "description": "Đọc truyện trên trang http://www.zongheng.com"
+    },
+    {
+      "name": "biqubao",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/plugin.zip",
+      "version": 1,
+      "source": "https://www.biqubao.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/icon.png",
+      "description": "Đọc truyện trên trang https://www.biqubao.com"
+    },
+    {
+      "name": "shubaow",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shubaow/plugin.zip",
+      "version": 1,
+      "source": "https://www.shubaow.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shubaow/icon.png",
+      "description": "Đọc truyện trên trang https://www.shubaow.net"
+    },
+    {
+      "name": "69shu",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/69shu/plugin.zip",
+      "version": 1,
+      "source": "https://www.69shu.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/69shu/icon.png",
+      "description": "Đọc truyện trên trang https://www.69shu.com"
+    },
+    {
+      "name": "630shu",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/plugin.zip",
+      "version": 1,
+      "source": "https://www.630shu.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/icon.png",
+      "description": "Đọc truyện trên trang https://www.630shu.net"
+    },
+    {
+      "name": "trxs",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/plugin.zip",
+      "version": 1,
+      "source": "http://trxs.cc",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/icon.png",
+      "description": "Đọc truyện trên trang http://trxs.cc"
+    },
+    {
+      "name": "quanben",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/quanben/plugin.zip",
+      "version": 1,
+      "source": "http://www.quanben.io",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/quanben/icon.png",
+      "description": "Đọc truyện trên trang http://www.quanben.io"
+    },
+    {
+      "name": "mangakakalot",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangakakalot/plugin.zip",
+      "version": 1,
+      "source": "https://mangakakalot.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangakakalot/icon.png",
+      "description": "Đọc truyện trên trang https://mangakakalot.com"
+    },
+    {
+      "name": "manganelo",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manganelo/plugin.zip",
+      "version": 1,
+      "source": "https://manganelo.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manganelo/icon.png",
+      "description": "Đọc truyện trên trang https://manganelo.com"
+    },
+    {
+      "name": "manga18fx",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga18fx/plugin.zip",
+      "version": 1,
+      "source": "https://manga18fx.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga18fx/icon.png",
+      "description": "Đọc truyện trên trang https://manga18fx.com"
+    },
+    {
+      "name": "manhwas",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhwas/plugin.zip",
+      "version": 1,
+      "source": "https://manhwas.men",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhwas/icon.png",
+      "description": "Đọc truyện trên trang https://manhwas.men"
+    }
+  ]
+}

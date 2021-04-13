@@ -37,13 +37,13 @@ String.prototype.mayBeFillHost = function(host) {
     if (url.startsWith('//')) return host.split('//')[0] + url;
 
     return host.rtrim('/') + '/' + url.ltrim('/');
-};
+}
 
 
 // --------------------------------------------------
 
-String.prototype.Q = function(e, q, i) {
-    if (this == '$') {
+var $ = {
+    Q: function(e, q, i) {
         var _empty = Html.parse('').select('body');
 
         var els = e.select(q);
@@ -61,12 +61,8 @@ String.prototype.Q = function(e, q, i) {
             }
             return els;
         }
-    }
-}
-
-
-String.prototype.QA = function(e, q, o) {
-    if (this == '$') {
+    },
+    QA: function(e, q, o) {
         var arr = [];
         var els = e.select(q);
         o = o || {};
@@ -97,4 +93,5 @@ String.prototype.QA = function(e, q, o) {
 
         return arr;
     }
+
 }
