@@ -8,6 +8,8 @@ http://www.zongheng.com
 
 https://www.biqubao.com
 
+http://www.liquge.com
+
 https://www.shubaow.net
 
 https://www.69shu.com
@@ -25,6 +27,8 @@ https://mangakakalot.com
 https://manganelo.com
 
 ***
+
+https://hentaivv.com
 
 https://manga18fx.com
 
