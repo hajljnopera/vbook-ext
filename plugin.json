@@ -32,6 +32,15 @@
       "description": "Đọc truyện trên trang https://www.biqubao.com"
     },
     {
+      "name": "liquge",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/liquge/plugin.zip",
+      "version": 1,
+      "source": "http://www.liquge.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/liquge/icon.png",
+      "description": "Đọc truyện trên trang http://www.liquge.com"
+    },
+    {
       "name": "shubaow",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shubaow/plugin.zip",
@@ -111,6 +120,15 @@
       "source": "https://manhwas.men",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhwas/icon.png",
       "description": "Đọc truyện trên trang https://manhwas.men"
+    },
+    {
+      "name": "hentaivv",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaivv/plugin.zip",
+      "version": 1,
+      "source": "https://hentaivv.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaivv/icon.png",
+      "description": "Đọc truyện trên trang https://hentaivv.com"
     }
   ]
 }

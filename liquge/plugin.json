@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "liquge",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "http://www.liquge.com",
+    "regexp": "(www|m)\\.liquge\\.com/book/\\d+/?$",
+    "description": "Đọc truyện trên trang http://www.liquge.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
