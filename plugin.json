@@ -14,6 +14,15 @@
       "description": "Đọc truyện trên trang https://www.qidian.com"
     },
     {
+      "name": "17k",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/17k/plugin.zip",
+      "version": 1,
+      "source": "https://www.17k.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/17k/icon.png",
+      "description": "Đọc truyện trên trang https://www.17k.com"
+    },
+    {
       "name": "zongheng",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/zongheng/plugin.zip",
@@ -129,6 +138,15 @@
       "source": "https://hentaivv.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaivv/icon.png",
       "description": "Đọc truyện trên trang https://hentaivv.com"
+    },
+    {
+      "name": "rawdevart",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/plugin.zip",
+      "version": 1,
+      "source": "https://rawdevart.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/icon.png",
+      "description": "Đọc truyện trên trang https://rawdevart.com"
     }
   ]
 }
