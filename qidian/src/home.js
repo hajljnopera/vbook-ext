@@ -8,5 +8,10 @@ function execute() {
         {title: "签约作者新书榜", input: "/rank/signnewbook?page={0}", script: "gen.js"},
         {title: "公众作家新书榜", input: "/rank/pubnewbook?page={0}", script: "gen.js"},
         {title: "原创风云榜·新书", input: "/rank/fengyun?page={0}", script: "gen.js"},
+        {title: "新人榜", input: "/rank/newauthor?page={0}", script: "gen.js"},
+
+        {title: "女生网", input: "/mm/rank/yuepiao?style=1&page={0}", script: "gen.js"},
+        
+        // {title: "", input: "", script: "gen.js"},
     ]);
 }
