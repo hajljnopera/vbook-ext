@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "haitanglin",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.haitanglin.com",
+    "regexp": "(www|m)\\.haitanglin\\.com/(info|book)/\\d+(\\.html)?$",
+    "description": "Đọc truyện trên trang https://www.haitanglin.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

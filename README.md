@@ -22,11 +22,19 @@ http://trxs.cc
 
 http://www.quanben.io
 
+https://www.piaotian5.com
+
+https://www.haitanglin.com
+
 ***
 
 https://mangakakalot.com
 
 https://manganelo.com
+
+https://hiperdex.com
+
+https://mangayeh.com
 
 https://rawdevart.com
 

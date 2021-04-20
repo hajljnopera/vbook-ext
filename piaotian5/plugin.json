@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "piaotian5",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.piaotian5.com",
+    "regexp": "(www|m)\\.piaotian5\\.com/book/\\d+\\.html$",
+    "description": "Đọc truyện trên trang https://www.piaotian5.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

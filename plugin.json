@@ -95,6 +95,24 @@
       "description": "Đọc truyện trên trang http://www.quanben.io"
     },
     {
+      "name": "piaotian5",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/plugin.zip",
+      "version": 1,
+      "source": "https://www.piaotian5.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/icon.png",
+      "description": "Đọc truyện trên trang https://www.piaotian5.com"
+    },
+    {
+      "name": "haitanglin",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/haitanglin/plugin.zip",
+      "version": 1,
+      "source": "https://www.haitanglin.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/haitanglin/icon.png",
+      "description": "Đọc truyện trên trang https://www.haitanglin.com"
+    },
+    {
       "name": "mangakakalot",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangakakalot/plugin.zip",
@@ -147,6 +165,24 @@
       "source": "https://rawdevart.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/icon.png",
       "description": "Đọc truyện trên trang https://rawdevart.com"
+    },
+    {
+      "name": "hiperdex",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/plugin.zip",
+      "version": 1,
+      "source": "https://hiperdex.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/icon.png",
+      "description": "Đọc truyện trên trang https://hiperdex.com"
+    },
+    {
+      "name": "mangayeh",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangayeh/plugin.zip",
+      "version": 1,
+      "source": "https://mangayeh.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangayeh/icon.png",
+      "description": "Đọc truyện trên trang https://mangayeh.com"
     }
   ]
 }
