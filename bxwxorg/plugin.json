@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "bxwxorg",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.bxwxorg.com",
+    "regexp": "(www|m)\\.(bxwxorg|bxwx66)\\.com/(read|book)/\\d+(/?|\\.html)$",
+    "description": "Đọc truyện trên trang https://www.bxwxorg.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

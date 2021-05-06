@@ -2,7 +2,7 @@
   "metadata": {
     "name": "630shu",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://www.630shu.net",
     "regexp": "(www|m)\\.630shu\\.net/(shu/\\d+\\.html|(chapters|book)_\\d+/?)$",
     "description": "Đọc truyện trên trang https://www.630shu.net",
@@ -14,6 +14,7 @@
     "detail": "detail.js",
     "toc": "toc.js",
     "chap": "chap.js",
-    "home": "home.js"
+    "home": "home.js",
+    "search": "search.js"
   }
 }

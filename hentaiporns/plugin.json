@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "hentaiporns",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://hentaiporns.net",
+    "regexp": "hentaiporns\\.net/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://hentaiporns.net",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "search": "search.js"
+  }
+}

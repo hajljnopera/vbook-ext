@@ -2,7 +2,7 @@
   "metadata": {
     "name": "haitanglin",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://www.haitanglin.com",
     "regexp": "(www|m)\\.haitanglin\\.com/(info|book)/\\d+(\\.html)?$",
     "description": "Đọc truyện trên trang https://www.haitanglin.com",
@@ -14,6 +14,7 @@
     "detail": "detail.js",
     "home": "home.js",
     "toc": "toc.js",
-    "chap": "chap.js"
+    "chap": "chap.js",
+    "search": "search.js"
   }
 }

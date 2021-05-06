@@ -1,5 +1,4 @@
 function execute() {
-
 	// li.dropdown.open > ul > li
 	return Response.success([
         {

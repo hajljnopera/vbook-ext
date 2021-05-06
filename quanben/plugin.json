@@ -2,7 +2,7 @@
   "metadata": {
     "name": "quanben",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "http://www.quanben.io",
     "regexp": "www\\.quanben\\.io/n/[^/]+/?$",
     "description": "Đọc truyện trên trang http://www.quanben.io",

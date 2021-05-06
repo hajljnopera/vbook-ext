@@ -2,7 +2,7 @@
   "metadata": {
     "name": "hentaivv",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://hentaivv.com",
     "regexp": "hentaivv\\.com/truyen/[^/]+/?$",
     "description": "Đọc truyện trên trang https://hentaivv.com",

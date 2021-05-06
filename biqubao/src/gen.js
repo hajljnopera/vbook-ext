@@ -6,7 +6,8 @@ function execute(url, page) {
     var data = [];
 
     var elems = $.QA(doc, '#newscontent .l li');
-
+    if (!elems.length) return Response.error(url);
+    
     elems.forEach(function(e) {
         var link = $.Q(e, '.s2 a').attr('href');
         var m, id, cover;

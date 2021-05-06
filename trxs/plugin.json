@@ -2,7 +2,7 @@
   "metadata": {
     "name": "trxs",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "http://trxs.cc",
     "regexp": "trxs\\.cc/tongren/\\d+\\.html",
     "description": "Đọc truyện trên trang http://trxs.cc",

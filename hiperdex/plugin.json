@@ -2,7 +2,7 @@
   "metadata": {
     "name": "hiperdex",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://hiperdex.com",
     "regexp": "hiperdex\\.com/manga/[^/]+/?$",
     "description": "Đọc truyện trên trang https://hiperdex.com",

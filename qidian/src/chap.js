@@ -1,9 +1,43 @@
-String.format||(String.format=function(t){var e=Array.prototype.slice.call(arguments,1);return t.replace(/{(\d+)}/g,function(t,r){return void 0!==e[r]?e[r]:t})}),String.prototype.append=function(t){return this.endsWith(t)?this:this+t},String.prototype.prepend=function(t){return this.startsWith(t)?this:t+this},String.prototype.rtrim=function(t){return null==t&&(t="\\s"),this.replace(new RegExp("["+t+"]*$"),"")},String.prototype.ltrim=function(t){return null==t&&(t="\\s"),this.replace(new RegExp("^["+t+"]*"),"")},String.prototype.mayBeFillHost=function(t){var r=this.trim();return r?r.startsWith(t)?r:r.startsWith("//")?t.split("//")[0]+r:t.rtrim("/")+"/"+r.ltrim("/"):""};var $={Q:function(t,r,e){var i=Html.parse("").select("body"),r=t.select(r);return""==r||0==r.size()?i:null==e?r.first():"number"==typeof e?-1==e?r.last():e>=r.size()?i:r.get(e):(e.remove&&r.select(e.remove).remove(),r)},QA:function(t,r,e){var i=[],n=t.select(r);if(e=e||{},""==n||0==n.size())return e.j?"":i;function s(t){(!e.f||e.f(t))&&i.push(e.m?e.m(t):t)}if(e.reverse)for(var o=n.size()-1;0<=o;o--)s(n.get(o));else for(o=0;o<n.size();o++)s(n.get(o));return e.j&&"string"==typeof e.j?i.join(e.j):i}};
+load('libs.js');
+
 function execute(url) {
-    var doc = Http.get(url).html();
+    var http = Http.get(url);
+    var doc = http.html();
+
+    const vipAlert = '<br><br>----------<br>这是VIP章节, 需要订阅后才能阅读';
     var htm = $.Q(doc, 'div.read-content.j_readContent').html();
 
-    if (url.includes('vipreader')) htm += '<br><br>----------<br>这是VIP章节, 需要订阅后才能阅读';
+    if (htm != '') {
+        if (url.includes('vipreader')) {
+            // VIP chapter with demo
+            // Ex: https://vipreader.qidian.com/chapter/1019664125/534766533
+            return Response.success(htm + vipAlert );
+        }
+        else { // Free chapter
+            return Response.success(htm);
+        }
+    }
 
-    return Response.success(htm);
+    // Free chapter in VIP volume
+    // Ex: https://vipreader.qidian.com/chapter/1019664125/643537011
+
+    var cookies = http.cookie();
+    var _csrfToken = cookies.match(/_csrfToken=(.*?);/)[1];
+    var bookId = '', chapterId = '', authorId = '';
+    var bm = $.Q(doc, '.book-mark[data-cid][data-bid][data-auid]');
+    if (bm != '') {
+        bookId = bm.attr('data-bid'), chapterId = bm.attr('data-cid'), authorId = bm.attr('data-auid');
+    }
+    // log([_csrfToken, bookId, chapterId, authorId]);
+    var chapterInfoAjax = 'https://vipreader.qidian.com/ajax/chapter/chapterInfo?_csrfToken={0}&bookId={1}&chapterId={2}&authorId={3}';
+    chapterInfoAjax = String.format(chapterInfoAjax, _csrfToken, bookId, chapterId, authorId);
+    var res = Http.get(chapterInfoAjax).string();
+    // log(res);
+    var j = JSON.parse(res);
+    if (j.code == 0) {
+        var content = j.data.chapterInfo.content;
+        if (content) return Response.success(content);
+    }
+
+    return Response.success(vipAlert);
 }

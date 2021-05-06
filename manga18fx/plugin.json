@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Manga18fx",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://manga18fx.com",
     "regexp": "manga18fx\\.com/manga/[^/]+/?$",
     "description": "Đọc truyện trên trang https://manga18fx.com",
@@ -14,6 +14,7 @@
     "detail": "detail.js",
     "home": "home.js",
     "toc": "toc.js",
-    "chap": "chap.js"
+    "chap": "chap.js",
+    "search": "search.js"
   }
 }

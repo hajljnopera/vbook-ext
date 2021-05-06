@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "manga-raw",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.manga-raw.club",
+    "regexp": "www\\.manga-raw\\.club/manga/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://www.manga-raw.club",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "genre": "genre.js",
+    "search": "search.js"
+  }
+}

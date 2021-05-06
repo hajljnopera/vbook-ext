@@ -2,7 +2,7 @@
   "metadata": {
     "name": "manhwas",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://manhwas.men",
     "regexp": "manhwas\\.men/manga/[^/]+/?$",
     "description": "Đọc truyện trên trang https://manhwas.men",
@@ -15,6 +15,7 @@
     "detail": "detail.js",
     "home": "home.js",
     "toc": "toc.js",
-    "chap": "chap.js"
+    "chap": "chap.js",
+    "search": "search.js"
   }
 }

@@ -2,7 +2,7 @@
   "metadata": {
     "name": "shubaow",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://www.shubaow.net",
     "regexp": "(www|m)\\.shubaow\\.net/\\d+[_/]\\d+/?$",
     "description": "Đọc truyện trên trang https://www.shubaow.net",

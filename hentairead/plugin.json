@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "hentairead",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://hentairead.com",
+    "regexp": "hentairead\\.com/hentai/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://hentairead.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

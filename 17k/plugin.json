@@ -2,10 +2,10 @@
   "metadata": {
     "name": "17k",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://www.17k.com",
     "regexp": "(www|h5)\\.17k\\.com/book/\\d+\\.html",
-    "description": "Đọc truyện trên trang https://www.17k.com (Giới hạn chỉ đọc được chương free)",
+    "description": "Đọc truyện trên trang https://www.17k.com.\n(Giới hạn chỉ đọc được chương free)",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"

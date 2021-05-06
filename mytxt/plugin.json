@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "mytxt",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "http://www.mytxt.cc",
+    "regexp": "(www|m)\\.mytxt\\.cc/read/\\d+/?$",
+    "description": "Đọc truyện trên trang http://www.mytxt.cc",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

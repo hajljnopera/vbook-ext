@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "noofff",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.nofff.com",
+    "regexp": "(www|m)\\.nofff\\.com/\\d+/?$",
+    "description": "Đọc truyện trên trang https://www.nofff.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
