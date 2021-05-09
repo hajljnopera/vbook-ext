@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    url = url.replace(/.+\.69shu\.com\/txt\/(\d+)\.htm/, 'https://www.69shu.com/$1');
+    url = url.replace(/.+\.69shu\.com\/txt\/(\d+)\.htm/, 'https://www.69shu.com/$1').append('/');
     var doc = Http.get(url).html('gbk');
 
     var data = [];

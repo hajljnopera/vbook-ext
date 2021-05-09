@@ -16,7 +16,7 @@ function execute(key, page) {
                 host: host
             })
         });
-        log(data);
+        // log(data);
         return Response.success(data);
     }
 

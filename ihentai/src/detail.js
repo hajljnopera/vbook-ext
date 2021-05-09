@@ -5,10 +5,10 @@ function execute(url) {
     var doc = Http.get(url).html();
 
     return Response.success({
-        name: $.Q(doc, 'h1.entry-title').text(),
-        cover: $.Q(doc, '.post-thumbnail img[class*="lazyload"]').attr('data-src').mayBeFillHost(host),
+        name: $.Q(doc, 'h1.card_title').text(),
+        cover: $.Q(doc, '.post-thumbnail img').attr('src'),
         author: 'Unknown',
-        description: $.QA(doc, '.entry-footer > span > a', {m: x => x.text().trim(), j: ', '}),
+        description: $.Q(doc, '.hcontent').html(),
         detail: 'Updated on: ' + $.Q(doc, 'time.entry-date.published.updated').text(),
         host: host
     });

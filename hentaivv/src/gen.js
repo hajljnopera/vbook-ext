@@ -3,24 +3,21 @@ load('libs.js');
 function execute(url, page) {
     var host = 'https://hentaivv.com';
 
-    url = String.format(host + url, page || '1');
-    var doc = Http.get(url).html();
+    var doc = Http.get(host + url).html();
     var data = [];
 
-    var elems = $.QA(doc, 'li.col-md-6.col-xs-12');
+    var elems = $.QA(doc, '#hotest .hotest-col');
     if (!elems.length) return Response.error(url);
     
     elems.forEach(function(e) {
         data.push({
             name: $.Q(e, 'a').attr('title'),
             link: $.Q(e, 'a').attr('href'),
-            cover: $.Q(e, 'a > img').attr('data-src') || '',
-            description: $.Q(e, 'p.crop-text-2').text(),
+            cover: $.Q(e, 'img').attr('src'),
+            description: '',
             host: host
         })
     });
 
-    var next = $.Q(doc, 'li.active + li').text().ltrim('0');
-
-    return Response.success(data, next);
+    return Response.success(data);
 }

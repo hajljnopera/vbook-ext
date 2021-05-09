@@ -18,8 +18,6 @@ https://www.bxwxorg.com
 
 https://www.haitanglin.com
 
-http://www.liquge.com
-
 http://www.mytxt.cc
 
 https://www.nofff.com
@@ -65,3 +63,5 @@ https://www.hentairules.net
 https://mangamiso.net
 
 https://www.manga-raw.club
+
+https://manhuascan.com

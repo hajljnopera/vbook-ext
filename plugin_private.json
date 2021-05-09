@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "author": "hajljnopera",
+    "description": "😢😢😢"
+  },
+  "data": [
+    {
+      "name": "skymanga",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/private/skymanga.zip",
+      "version": 1,
+      "source": "https://skymanga.co",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/private/skymanga.png",
+      "description": "Đọc truyện trên trang https://skymanga.co"
+    }
+  ]
+}

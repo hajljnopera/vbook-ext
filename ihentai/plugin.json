@@ -1,14 +1,15 @@
 {
   "metadata": {
-    "name": "liquge",
+    "name": "ihentai",
     "author": "hajljnopera",
-    "version": 2,
-    "source": "http://www.liquge.com",
-    "regexp": "(www|m)\\.liquge\\.com/book/\\d+/?$",
-    "description": "Đọc truyện trên trang http://www.liquge.com",
+    "version": 1,
+    "source": "https://ihentai.info",
+    "regexp": "ihentai\\.info/[^/]+/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://ihentai.info",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "chinese_novel"
+    "type": "comic",
+    "tag": "nsfw"
   },
   "script": {
     "home": "home.js",
