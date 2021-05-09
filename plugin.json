@@ -222,6 +222,15 @@
       "description": "Đọc truyện trên trang https://mangayeh.com"
     },
     {
+      "name": "ihentai",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ihentai/plugin.zip",
+      "version": 1,
+      "source": "https://ihentai.info",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ihentai/icon.png",
+      "description": "Đọc truyện trên trang https://ihentai.info"
+    },
+    {
       "name": "hentaic",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaic/plugin.zip",

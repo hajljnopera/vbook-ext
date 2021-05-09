@@ -52,6 +52,8 @@ https://hiperdex.com
 
 https://mangayeh.com
 
+https://ihentai.info
+
 https://hentaic.net
 
 https://hentaiporns.net
