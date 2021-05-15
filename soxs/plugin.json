@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "soxs",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.soxs.cc",
+    "regexp": "(www|m)\\.soxs\\.cc(/book)?/([A-Z][a-z\\d]{0,10})+(\\.html|/)?$",
+    "description": "Đọc truyện trên trang https://www.soxs.cc",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

@@ -116,10 +116,10 @@
       "name": "quanben",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/quanben/plugin.zip",
-      "version": 2,
-      "source": "http://www.quanben.io",
+      "version": 3,
+      "source": "http://quanben.io",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/quanben/icon.png",
-      "description": "Đọc truyện trên trang http://www.quanben.io"
+      "description": "Đọc truyện trên trang http://quanben.io"
     },
     {
       "name": "shouda88",
@@ -147,6 +147,15 @@
       "source": "https://www.shutxt.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shutxt/icon.png",
       "description": "Đọc truyện trên trang https://www.shutxt.com"
+    },
+    {
+      "name": "soxs",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/plugin.zip",
+      "version": 1,
+      "source": "https://www.soxs.cc",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/icon.png",
+      "description": "Đọc truyện trên trang https://www.soxs.cc"
     },
     {
       "name": "trxs",
@@ -292,6 +301,15 @@
       "source": "https://manhuascan.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhuascan/icon.png",
       "description": "Đọc truyện trên trang https://manhuascan.com"
+    },
+    {
+      "name": "truyentv",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/plugin.zip",
+      "version": 1,
+      "source": "http://truyentv.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
+      "description": "Đọc truyện trên trang http://truyentv.net"
     }
   ]
 }

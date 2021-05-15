@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'http://www.quanben.io';
+    var host = 'http://quanben.io';
     page = page || '1';
     url = String.format(host + url, page);
     var doc = Http.get(url).html();
@@ -14,7 +14,7 @@ function execute(url, page) {
         data.push({
             name: $.Q(e, 'h3 > a > span').text(),
             link: $.Q(e, 'h3 > a').attr('href'),
-            cover: $.Q(e, 'img').attr('src'),
+            cover: $.Q(e, 'img').attr('src').mayBeFillHost('http://img.c0m.io'),
             description: $.Q(e, 'p').text(),
             host: host
         })
