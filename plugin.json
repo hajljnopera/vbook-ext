@@ -306,7 +306,7 @@
       "name": "truyentv",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "http://truyentv.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
       "description": "Đọc truyện trên trang http://truyentv.net"

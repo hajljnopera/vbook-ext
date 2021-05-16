@@ -3,7 +3,7 @@ load('libs.js');
 function execute(url, page) {
     var host = 'http://truyentv.net';
     page = page || '1';
-    var newUrl = String.format(host + (page == '1' ? '/' : '/page/{0}/'), page);
+    var newUrl = String.format(host + url + (page == '1' ? '/' : '/page/{0}/'), page);
     var doc = Http.get(newUrl).html();
     var data = [];
 
