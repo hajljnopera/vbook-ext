@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(key, page) {
-    var host = 'https://ihentai.info';
+    var host = urlGetHost(url);
     var doc = Http.get(String.format('{0}/page/{1}/', host, page || '1')).params({'s': key}).html();
     var data = [];
     var elems = $.QA(doc, '.container article');

@@ -2,8 +2,8 @@ load('libs.js');
 
 function execute(url) {
     url = redirect(url);
-    log(url);
-    var doc = Http.get(url.length ? url[0] : url).html();
+    // log(url);
+    var doc = Http.get(TypeChecker.isArray(url) ? url[0] : url).html();
     var data = [];
 
     var elems = $.QA(doc, 'div.volume-list > div> ul > li > a');

@@ -2,9 +2,9 @@
   "metadata": {
     "name": "ihentai",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://ihentai.info",
-    "regexp": "ihentai\\.info/[^/]+/[^/]+/?$",
+    "regexp": "(www1?.)?ihentai\\.info/[^/]+/?$",
     "description": "Đọc truyện trên trang https://ihentai.info",
     "local": "vi-VN",
     "language": "javascript",

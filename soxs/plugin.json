@@ -2,9 +2,9 @@
   "metadata": {
     "name": "soxs",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://www.soxs.cc",
-    "regexp": "(www|m)\\.soxs\\.cc(/book)?/([A-Z][a-z\\d]{0,10})+(\\.html|/)?$",
+    "regexp": "(www|m|wap)\\.soxs\\.cc(/book)?/([A-Z][a-z\\d]{0,10})+(\\.html|/)?$",
     "description": "Đọc truyện trên trang https://www.soxs.cc",
     "local": "vi-VN",
     "language": "javascript",

@@ -34,6 +34,8 @@ https://www.shubaow.net
 
 https://www.shutxt.com
 
+https://www.soxs.cc
+
 http://trxs.cc
 
 https://www.xbiquge.cc
@@ -52,6 +54,8 @@ https://hiperdex.com
 
 https://mangayeh.com
 
+https://manga18.club
+
 https://ihentai.info
 
 https://hentaic.net
@@ -66,4 +70,3 @@ https://mangamiso.net
 
 https://www.manga-raw.club
 
-https://manhuascan.com

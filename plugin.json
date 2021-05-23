@@ -17,7 +17,7 @@
       "name": "17k",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/17k/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "https://www.17k.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/17k/icon.png",
       "description": "Đọc truyện trên trang https://www.17k.com"
@@ -26,7 +26,7 @@
       "name": "zongheng",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/zongheng/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "http://www.zongheng.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/zongheng/icon.png",
       "description": "Đọc truyện trên trang http://www.zongheng.com"
@@ -152,7 +152,7 @@
       "name": "soxs",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://www.soxs.cc",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/icon.png",
       "description": "Đọc truyện trên trang https://www.soxs.cc"
@@ -234,7 +234,7 @@
       "name": "ihentai",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ihentai/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://ihentai.info",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ihentai/icon.png",
       "description": "Đọc truyện trên trang https://ihentai.info"
@@ -276,6 +276,15 @@
       "description": "Đọc truyện trên trang https://www.hentairules.net"
     },
     {
+      "name": "manga18.club",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga18.club/plugin.zip",
+      "version": 1,
+      "source": "https://manga18.club",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga18.club/icon.png",
+      "description": "Đọc truyện trên trang https://manga18.club"
+    },
+    {
       "name": "mangamiso",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangamiso/plugin.zip",
@@ -292,15 +301,6 @@
       "source": "https://www.manga-raw.club",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga-raw/icon.png",
       "description": "Đọc truyện trên trang https://www.manga-raw.club"
-    },
-    {
-      "name": "manhuascan",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhuascan/plugin.zip",
-      "version": 1,
-      "source": "https://manhuascan.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manhuascan/icon.png",
-      "description": "Đọc truyện trên trang https://manhuascan.com"
     },
     {
       "name": "truyentv",

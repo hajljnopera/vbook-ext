@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "manhuascan",
+    "name": "manga18.club",
     "author": "hajljnopera",
     "version": 1,
-    "source": "https://manhuascan.com",
-    "regexp": "manhuascan\\.com/(?!read).+\\.html$",
-    "description": "Đọc truyện trên trang https://manhuascan.com",
+    "source": "https://manga18.club",
+    "regexp": "manga18\\.club/manhwa/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://manga18.club",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"
@@ -15,7 +15,7 @@
     "detail": "detail.js",
     "toc": "toc.js",
     "chap": "chap.js",
-    "genre": "genre.js",
-    "search": "search.js"
+    "search": "search.js",
+    "genre": "genre.js"
   }
 }

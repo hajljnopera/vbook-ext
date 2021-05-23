@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://ihentai.info';
+    var host = 'https://www1.ihentai.info';
     url = String.format(host + url, page || '1');
     var doc = Http.get(url).html();
     var data = [];

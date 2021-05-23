@@ -2,7 +2,7 @@
   "metadata": {
     "name": "zongheng",
     "author": "hajljnopera",
-    "version": 2,
+    "version": 3,
     "source": "http://www.zongheng.com",
     "regexp": "(book|huayu|m)\\.zongheng\\.com/(book/\\d+\\.html$|h\\d+/book\\?bookid=\\d+[^/]+/?$)",
     "description": "Đọc truyện trên trang http://www.zongheng.com",
@@ -15,6 +15,7 @@
     "detail": "detail.js",
     "toc": "toc.js",
     "chap": "chap.js",
-    "search": "search.js"
+    "search": "search.js",
+    "genre": "genre.js"
   }
 }

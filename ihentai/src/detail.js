@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'https://hentaiporns.net';
+    var host = urlGetHost(url);
     var doc = Http.get(url).html();
 
     return Response.success({
