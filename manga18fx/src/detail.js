@@ -8,7 +8,7 @@ function execute(url) {
         cover: $.Q(doc, 'div.summary_image > a > img').attr('src'),
         author: $.Q(doc, 'div.post-content > div:nth-child(3) > div.summary-content > div').text(),
         description: $.Q(doc, 'div.panel-story-description > div').html(),
-        detail: $.Q(doc, 'div.summary_content_wrap > div > div.post-content', {remove: ['div.post-rating']}).text(),
+        detail: $.QA(doc, 'div.summary_content_wrap .post-content > .post-content_item', {m: x => $.Q(x, '.summary-heading').text().rtrim(':') + ': ' + $.Q(x, '.summary-content').text(), j: '<br>'}),
         host: 'https://manga18fx.com',
         ongoing: $.Q(doc, 'div.summary_content_wrap > div > div.post-status > div:nth-child(2) > div.summary-content').text().includes('OnGoing')
     });
