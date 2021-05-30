@@ -1,19 +1,19 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'https://www.xbiquge.cc';
-    url = url.replace('m.xbiquge.cc', 'www.xbiquge.cc').append('/');
+    var host = urlGetHost(url);
+    url = url.replace('//m.', '//www.').append('/');
     var doc = Http.get(url).html();
 
-    var coverImg = $.Q(doc, '#fmimg img').attr('src').mayBeFillHost(host);
-	var author = $.Q(doc, '#info p').text().replace('作者：', '');
+    var infoEl = $.Q(doc, '#maininfo');
+    var author = $.Q(infoEl, '#info > h1 + p > a').text().trim();
 
     return Response.success({
-        name: $.Q(doc, '#info h1').text(),
-        cover: coverImg,
+        name: $.Q(infoEl, '#info > h1').text(),
+        cover: $.Q(infoEl, '#fmimg img').attr('src'),
         author: author,
-        description: $.Q(doc, '#intro').text(),
-        detail: String.format('{0}<br>{1}', $.Q(doc, '#info > p:nth-child(2)').text(), $.Q(doc, '#info > p:nth-child(4)').text()),
+        description: $.Q(infoEl, '#intro').html(),
+        detail: '作者: ' + author + '<br>' + $.QA(infoEl, '#info p', {f: x => x.text().includes('更新时间'), m: x => x.text().trim(), j: ' '}),
         host: host
     })
 }

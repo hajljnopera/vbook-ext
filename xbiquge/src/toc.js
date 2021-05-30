@@ -1,8 +1,9 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'https://www.xbiquge.cc';
-    url = url.replace('m.xbiquge.cc', 'www.xbiquge.cc').append('/');
+    var host = urlGetHost(url);
+    url = url.replace('//m.', '//www.').append('/');
+    // log(url);
     var doc = Http.get(url).html();
     
     var data = [];
@@ -18,7 +19,7 @@ function execute(url) {
     elems.forEach(function(e){
         data.push({
             name: $.Q(e, 'a').text(),
-            url: e.attr('href').mayBeFillHost(url),
+            url: e.attr('href').mayBeFillHost(url), // Important
             host: host
         })
     })

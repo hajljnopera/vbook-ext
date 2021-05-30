@@ -77,6 +77,15 @@
       "description": "Đọc truyện trên trang https://www.haitanglin.com"
     },
     {
+      "name": "liquge",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/liquge/plugin.zip",
+      "version": 3,
+      "source": "http://www.liquge.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/liquge/icon.png",
+      "description": "Đọc truyện trên trang http://www.liquge.com"
+    },
+    {
       "name": "mytxt",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mytxt/plugin.zip",
@@ -170,10 +179,10 @@
       "name": "xbiquge",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xbiquge/plugin.zip",
-      "version": 1,
-      "source": "https://www.xbiquge.cc",
+      "version": 2,
+      "source": "https://www.xbiquge.so",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xbiquge/icon.png",
-      "description": "Đọc truyện trên trang https://www.xbiquge.cc"
+      "description": "Đọc truyện trên trang https://www.xbiquge.so"
     },
 
     {

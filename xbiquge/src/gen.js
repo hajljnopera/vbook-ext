@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://www.xbiquge.cc';
+    var host = 'https://www.xbiquge.so';
     var doc = Http.get(host + url).html('gbk');
     var data = [];
 
@@ -16,7 +16,7 @@ function execute(url, page) {
 
         if ((m = link.match(/book\/(\d+)/)) && m[1] && (id = m[1])) {
             cover = String.format('{0}/files/article/image/{1}/{2}/{3}s.jpg', host, Math.floor(id / 1000), id, id);
-            // https://www.xbiquge.cc/files/article/image/51/51918/51918s.jpg
+            // https://www.xbiquge.so/files/article/image/51/51918/51918s.jpg
         }
 
         data.push({

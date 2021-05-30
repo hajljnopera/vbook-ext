@@ -2,10 +2,10 @@
   "metadata": {
     "name": "xbiquge",
     "author": "hajljnopera",
-    "version": 1,
-    "source": "https://www.xbiquge.cc",
-    "regexp": "(www|m)\\.xbiquge\\.cc/v?book/\\d+/?$",
-    "description": "Đọc truyện trên trang https://www.xbiquge.cc",
+    "version": 2,
+    "source": "https://www.xbiquge.so",
+    "regexp": "(www|m)\\.xbiquge\\.so/v?book/\\d+/?$",
+    "description": "Đọc truyện trên trang https://www.xbiquge.so",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"
