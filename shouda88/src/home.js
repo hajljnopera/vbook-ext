@@ -1,13 +1,10 @@
 function execute() {
     return Response.success([
-        {title: "玄幻", input: 'xuanhuan', script: "gen.js"},
-        {title: "武侠", input: 'wuxia', script: "gen.js"},
-        {title: "都市", input: 'dushi', script: "gen.js"},
-        {title: "历史", input: 'lishi', script: "gen.js"},
-        {title: "游戏", input: 'youxi', script: "gen.js"},
-        {title: "科幻", input: 'kehuan', script: "gen.js"},
-        {title: "恐怖", input: 'xuanyi', script: "gen.js"},
-        {title: "二次", input: 'erciyuan', script: "gen.js"},
-        {title: "经典", input: 'jingdian', script: "gen.js"},
+        {title: "更新", input: "lastupdate", script: "gen.js"},
+        {title: "推荐", input: "allvote", script: "gen.js"},
+        {title: "点击", input: "allvisit", script: "gen.js"},
+        {title: "收藏", input: "goodnum", script: "gen.js"},
+        {title: "新书入库", input: "postdate", script: "gen.js"},
+        {title: "完本", input: "quanben", script: "gen.js"},
     ]);
 }

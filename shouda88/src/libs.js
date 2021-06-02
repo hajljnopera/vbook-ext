@@ -63,13 +63,8 @@ var TypeChecker = {
 
 function log(o, msg) {
     Console.log('___' + (msg || '') + '___');
-    if (TypeChecker.isArray(o) || TypeChecker.isObject(o)) {
-        try {
-            Console.log(JSON.stringify(o, null, 2));
-        } 
-        catch(e) {
-            Console.log(o);
-        }
+    if (TypeChecker.isArray(o)) {
+        Console.log(JSON.stringify(o, null, 2));
     }
     else {
         Console.log(o);
