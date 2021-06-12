@@ -12,7 +12,7 @@ function execute(url) {
         pArr.shift();
     }
 
-    var htm = pArr.join();
+    var htm = pArr.join(' ');
 
     return Response.success(htm);
 }
