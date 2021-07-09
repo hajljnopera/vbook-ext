@@ -12,7 +12,7 @@ function execute(url) {
     // Ex: https://www.soxs.cc/ShiXiongXiaoShiMeiYouBaShanMenChaiLiao/110895.html
     htm = htm.replace(/^\s*第\d+章.*?<br>/, '');
 
-    // log(htm);
+    log(htm);
     return Response.success(htm);
 }
 

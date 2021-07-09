@@ -15,7 +15,7 @@ function execute(url) {
 
     return Response.success({
         name: $.Q(doc, 'div.bookname > h1', {remove: 'em'}).text(),
-        cover: $.Q(doc, 'div.pic > img').attr('src'),
+        cover: $.Q(doc, 'div.pic > img').attr('src').mayBeFillHost('https://img.shouda88.com'),
         author: author,
         description: $.Q(doc, 'div.intro', {remove: 'p.book_keywords, script'}).text(),
         detail: String.format('作者: {0}<br>{1}', author, lastUpdated),

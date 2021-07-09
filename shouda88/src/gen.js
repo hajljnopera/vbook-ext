@@ -24,7 +24,7 @@ function execute(url, page) {
         data.push({
             name: $.Q(e, 'div.title > h2 > a').text(),
             link: $.Q(e, 'div.title > h2 > a').attr('href'),
-            cover: $.Q(e, 'div.pic img').attr('src') || imgErr,
+            cover: $.Q(e, 'div.pic img').attr('src').mayBeFillHost('https://img.shouda88.com') || imgErr,
             description: $.Q(e, 'div.sys > li > a').text(),
             host: host
         })
