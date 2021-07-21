@@ -2,7 +2,7 @@
   "metadata": {
     "name": "manga18.club",
     "author": "hajljnopera",
-    "version": 1,
+    "version": 2,
     "source": "https://manga18.club",
     "regexp": "manga18\\.club/manhwa/[^/]+/?$",
     "description": "Đọc truyện trên trang https://manga18.club",
