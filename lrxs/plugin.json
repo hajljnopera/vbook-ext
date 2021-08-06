@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "lrxs",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://www.lrxs.org",
+    "regexp": "(www|m)\\.lrxs\\.org/\\d+_\\d+/?",
+    "description": "Đọc truyện trên trang https://www.lrxs.org",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "home": "home.js",
+    "search": "search.js"
+  }
+}

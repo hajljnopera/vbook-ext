@@ -184,6 +184,25 @@
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xbiquge/icon.png",
       "description": "Đọc truyện trên trang https://www.xbiquge.so"
     },
+    {
+      "name": "lrxs",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/lrxs/plugin.zip",
+      "version": 1,
+      "source": "https://www.lrxs.org",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/lrxs/icon.png",
+      "description": "Đọc truyện trên trang https://www.lrxs.org"
+    },
+    {
+      "name": "xinyushuwu",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xinyushuwu/plugin.zip",
+      "version": 1,
+      "source": "https://www.xinyushuwu.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xinyushuwu/icon.png",
+      "description": "Đọc truyện trên trang https://www.xinyushuwu.com"
+    },
+
 
     {
       "name": "manga18fx",
