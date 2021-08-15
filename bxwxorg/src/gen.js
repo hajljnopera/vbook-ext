@@ -11,6 +11,7 @@ function execute(url, page) {
     }
     
     var doc = Http.get(url).html();
+    Console.log(doc);
     var data = [];
     var imgErr = host + '/static/image/nocover.jpg';
 
@@ -19,11 +20,11 @@ function execute(url, page) {
     if (!elems.length) elems = $.QA(doc, 'div.novelslist2 li');
 
     elems.forEach(function(e) {
-        var link = $.Q(e, '.s2 a').attr('href');
+        var link = $.Q(e, '.s2 a').attr('href').mayBeFillHost(host);
         if (!link) return;
 
         var doc2 = Http.get(link).html();
-        var cover = $.Q(doc2, 'meta[property="og:image"]').attr('content');
+        var cover = $.Q(doc2, 'meta[property="og:image"]').attr('content').mayBeFillHost('https://img.bxwxorg.com');
 
         data.push({
             name: $.Q(e, '.s2 a').text(),

@@ -2,11 +2,10 @@ load('libs.js');
 
 function execute(url) {
     var host = 'https://www.bxwxorg.com';
-    url = url.replace(/(www|m)\.(bxwxorg|bxwx66)\.com\/(book|read)\/(\d+)(\.html)?/, 'www.bxwxorg.com/read/$4');
+    var bookId = url.match(/(\d+)/)[1];
+    var doc = Http.get(String.format('{0}/read/{1}/', host, bookId)).html();
 
-    var doc = Http.get(url).html();
-
-    var coverImg = $.Q(doc, '#fmimg img').attr('src');
+    var coverImg = $.Q(doc, '#fmimg img').attr('src').mayBeFillHost('https://img.bxwxorg.com');
 	var author = $.Q(doc, '#info h1 + p > a').text();
 
     return Response.success({

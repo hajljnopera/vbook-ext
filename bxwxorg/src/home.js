@@ -8,6 +8,5 @@ function execute() {
         {title: "游戏", input: "/youxi/", script: "gen.js"},
         {title: "科幻", input: "/kehuan/", script: "gen.js"},
         {title: "恐怖", input: "/xuanyi/", script: "gen.js"},
-        // {title: "", input: "//", script: "gen.js"},
     ])
 }

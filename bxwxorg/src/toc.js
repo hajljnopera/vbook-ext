@@ -2,9 +2,8 @@ load('libs.js');
 
 function execute(url) {
     var host = 'https://www.bxwxorg.com';
-    url = url.replace(/(www|m)\.(bxwxorg|bxwx66)\.com\/(book|read)\/(\d+)(\.html)?/, 'www.bxwxorg.com/read/$4');
-
-    var doc = Http.get(url).html();
+    var bookId = url.match(/(\d+)/)[1];
+    var doc = Http.get(String.format('{0}/read/{1}/', host, bookId)).html();
     
     var data = [];
     var elems = $.QA(doc, '#list a');
@@ -21,7 +20,7 @@ function execute(url) {
     elems.forEach(function(e){
         data.push({
             name: $.Q(e, 'a').text(),
-            url: e.attr('href').mayBeFillHost(url),
+            url: e.attr('href').mayBeFillHost(host),
             host: host
         })
     })
