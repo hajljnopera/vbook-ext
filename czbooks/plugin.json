@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "czbooks",
+    "author": "hajljnopera",
+    "version": 1,
+    "source": "https://czbooks.net",
+    "regexp": "czbooks\\.net/n/[^/]+$",
+    "description": "Đọc truyện trên trang https://czbooks.net",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "home": "home.js",
+    "search": "search.js"
+  }
+}

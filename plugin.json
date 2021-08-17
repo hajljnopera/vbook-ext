@@ -202,7 +202,15 @@
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xinyushuwu/icon.png",
       "description": "Đọc truyện trên trang https://www.xinyushuwu.com"
     },
-
+    {
+      "name": "czbooks",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/plugin.zip",
+      "version": 1,
+      "source": "https://czbooks.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/icon.png",
+      "description": "Đọc truyện trên trang https://czbooks.net"
+    },
 
     {
       "name": "manga18fx",
