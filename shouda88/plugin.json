@@ -2,7 +2,7 @@
   "metadata": {
     "name": "shouda88",
     "author": "hajljnopera",
-    "version": 4,
+    "version": 5,
     "source": "https://www.shouda88.com",
     "regexp": "(www|m)\\.shouda88\\.com/(\\d+/?|shu_\\d+\\.html)$",
     "description": "Đọc truyện trên trang https://www.shouda88.com",

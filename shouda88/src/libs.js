@@ -122,13 +122,15 @@ var $ = {
             }
         }
 
+        var count = els.size();
+        
         if (o.reverse) {
-            for (var i = els.size() - 1; i >= 0; i--) {
+            for (var i = count - 1; i >= 0; i--) {
                 var item = els.get(i);
                 processItem(item);
             }
         } else {
-            for (var i = 0; i < els.size(); i++) {
+            for (var i = 0; i < count; i++) {
                 var item = els.get(i);
                 processItem(item);
             }

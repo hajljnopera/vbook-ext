@@ -13,6 +13,8 @@ function execute(url) {
     }
 
     var htm = pArr.join(' ');
+    htm = htm.replace(/<\/p> <p>([^“]+”)<\/p>/gm, '$1</p>');
+    // log(htm);
 
     return Response.success(htm);
 }
