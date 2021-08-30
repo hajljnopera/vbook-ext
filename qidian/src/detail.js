@@ -6,15 +6,14 @@ function execute(url) {
     var doc = Http.get(url).html();
 
     var author = $.Q(doc, 'div.book-info > h1 > span > a').text();
-    var tags = $.QA(doc, 'div.book-info > p.tag > *', {m: x => x.text(), j: ','});
-    // var intro = $.Q(doc, 'div.book-info > p.intro').text();
+    var tags = $.QA(doc, 'div.book-info > p.tag > *', {m: x => x.text(), j: '，'});
 
     return Response.success({
         name: $.Q(doc, 'div.book-info > h1 > em').text(),
         cover: $.Q(doc, '#bookImg > img').attr('src').mayBeFillHost(host),
         author: author,
         description: $.Q(doc, 'div.book-info-detail > div.book-intro').html(),
-        detail: String.format('作者: {0}<br>{1}', author, tags),
+        detail: String.format('作者：{0}<br>{1}', author, tags),
         host: host
     })
 }

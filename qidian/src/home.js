@@ -11,7 +11,5 @@ function execute() {
         {title: "新人榜", input: "/rank/newauthor?page={0}", script: "gen.js"},
 
         {title: "女生网", input: "/mm/rank/yuepiao?style=1&page={0}", script: "gen.js"},
-        
-        // {title: "", input: "", script: "gen.js"},
     ]);
 }

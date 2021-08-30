@@ -2,20 +2,20 @@
   "metadata": {
     "name": "qidian",
     "author": "hajljnopera",
-    "version": 3,
+    "version": 4,
     "source": "https://www.qidian.com",
-    "regexp": "(book|m)\\.qidian\\.com/(info|book)/\\d+",
+    "regexp": "(book|m)\\.qidian\\.com/(info|book)/\\d+(\\.html)?",
     "description": "Đọc truyện trên trang https://www.qidian.com. \n(Giới hạn chỉ đọc được chương free)",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"
   },
   "script": {
-    "home": "home.js",
-    "genre": "genre.js",
     "detail": "detail.js",
-    "search": "search.js",
     "toc": "toc.js",
-    "chap": "chap.js"
+    "chap": "chap.js",
+    "home": "home.js",
+    "search": "search.js",
+    "genre": "genre.js"
   }
 }
