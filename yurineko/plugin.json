@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "hiperdex",
+    "name": "Yuri Neko",
     "author": "hajljnopera",
-    "version": 3,
-    "source": "https://hiperdex.com",
-    "regexp": "hiperdex\\.com/manga/[^/]+/?$",
-    "description": "Đọc truyện trên trang https://hiperdex.com",
+    "version": 1,
+    "source": "https://yurineko.net",
+    "regexp": "yurineko\\.net/manga/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://yurineko.net",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

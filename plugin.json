@@ -252,7 +252,7 @@
       "name": "hiperdex",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "https://hiperdex.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/icon.png",
       "description": "Đọc truyện trên trang https://hiperdex.com"
@@ -337,6 +337,15 @@
       "source": "https://www.manga-raw.club",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga-raw/icon.png",
       "description": "Đọc truyện trên trang https://www.manga-raw.club"
+    },
+    {
+      "name": "Yuri Neko",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/yurineko/plugin.zip",
+      "version": 1,
+      "source": "https://yurineko.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/yurineko/icon.png",
+      "description": "Đọc truyện trên trang https://yurineko.net"
     },
     {
       "name": "truyentv",
