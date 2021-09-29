@@ -355,6 +355,15 @@
       "source": "http://truyentv.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
       "description": "Đọc truyện trên trang http://truyentv.net"
+    },
+    {
+      "name": "skymanga",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/plugin.zip",
+      "version": 2,
+      "source": "https://skymanga.co",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/icon.png",
+      "description": "Đọc truyện trên trang https://skymanga.co"
     }
   ]
 }

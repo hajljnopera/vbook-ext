@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "skymanga",
+    "author": "hajljnopera",
+    "version": 2,
+    "source": "https://skymanga.co",
+    "regexp": "skymanga\\.co/manga/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://skymanga.co",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "detail": "detail.js",
+    "home": "home.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
