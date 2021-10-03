@@ -364,6 +364,15 @@
       "source": "https://skymanga.co",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/icon.png",
       "description": "Đọc truyện trên trang https://skymanga.co"
+    },
+    {
+      "name": "mangaowl",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangaowl/plugin.zip",
+      "version": 1,
+      "source": "https://mangaowl.net",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangaowl/icon.png",
+      "description": "Đọc truyện trên trang https://mangaowl.net"
     }
   ]
 }
