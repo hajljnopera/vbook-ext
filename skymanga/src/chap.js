@@ -6,11 +6,11 @@ function execute(url) {
         log('Cloudflare!!!');
         doc = fetchDOM(url);
     }
-    var elems = $.QA(doc, '.reading-content img[data-src]');
+    var elems = $.QA(doc, '.reading-content img.wp-manga-chapter-img');
 
     var imgs = [];
     elems.forEach(function(e) {
-        var img = e.attr('data-src');
+        var img = e.attr('data-src') || e.attr('src');
         if (img) imgs.push(img.trim());
     })
 

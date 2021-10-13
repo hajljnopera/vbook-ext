@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://www.soxs.cc';
+    var host = 'https://www.soxscc.cc';
     if (!page) page = '1';
     var hasNextPage = url != '/';
     var newUrl = String.format(host + url + (page == '1' ? '' : '{0}.html'), page);

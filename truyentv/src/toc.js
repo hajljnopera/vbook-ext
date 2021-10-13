@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'http://truyentv.net';
+     var host = 'http://truyensac.net';
     var doc = Http.get(url).html();
     var data = [];
 

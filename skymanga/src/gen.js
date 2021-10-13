@@ -13,10 +13,13 @@ function execute(url, page) {
     var elems = $.QA(doc, 'div.page-item-detail');
     
     elems.forEach(function(e) {
+        var coverEl = $.Q(e, '.item-thumb img');
+        var cover = coverEl.attr('data-src') || coverEl.attr('src');
+
         data.push({
             name: $.Q(e, 'h3 a').text(),
             link: $.Q(e, 'h3 a').attr('href'),
-            cover: $.Q(e, 'div.item-thumb img').attr('data-src'),
+            cover: cover,
             description: $.Q(e, 'div.chapter-item > span > a').text(),
             host: host
         })

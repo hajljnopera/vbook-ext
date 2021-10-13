@@ -2,7 +2,7 @@
   "metadata": {
     "name": "skymanga",
     "author": "hajljnopera",
-    "version": 2,
+    "version": 3,
     "source": "https://skymanga.co",
     "regexp": "skymanga\\.co/manga/[^/]+/?$",
     "description": "Đọc truyện trên trang https://skymanga.co",

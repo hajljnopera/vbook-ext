@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'https://www.soxs.cc';
+    var host = 'https://www.soxscc.cc';
     url = correctUrl(url, host);
     // log(url);
 

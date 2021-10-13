@@ -161,10 +161,10 @@
       "name": "soxs",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/plugin.zip",
-      "version": 3,
-      "source": "https://www.soxs.cc",
+      "version": 4,
+      "source": "https://www.soxscc.cc",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/icon.png",
-      "description": "Đọc truyện trên trang https://www.soxs.cc"
+      "description": "Đọc truyện trên trang https://www.soxscc.cc"
     },
     {
       "name": "trxs",
@@ -348,19 +348,19 @@
       "description": "Đọc truyện trên trang https://yurineko.net"
     },
     {
-      "name": "truyentv",
+      "name": "truyensac",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/plugin.zip",
-      "version": 2,
-      "source": "http://truyentv.net",
+      "version": 3,
+      "source": "http://truyensac.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
-      "description": "Đọc truyện trên trang http://truyentv.net"
+      "description": "Đọc truyện trên trang http://truyensac.net"
     },
     {
       "name": "skymanga",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "https://skymanga.co",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/icon.png",
       "description": "Đọc truyện trên trang https://skymanga.co"
