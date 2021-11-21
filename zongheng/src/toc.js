@@ -2,22 +2,18 @@ load('libs.js');
 
 function execute(url) {
     url = redirect(url);
-    // log(url);
-    var doc = Http.get(TypeChecker.isArray(url) ? url[0] : url).html();
     var data = [];
 
-    var elems = $.QA(doc, 'div.volume-list > div> ul > li > a');
-    if (!elems.length && url[1]) {
-        doc = Http.get(url[1]).html();
-        elems = $.QA(doc, 'div.volume-list > div> ul > li > a');
-    };
+    if (!TypeChecker.isArray(url)) {
+        data = parseDoc(url);
+    }
+    else {
+        data = parseDoc(url[0]);
 
-    elems.forEach(function(e) {
-        data.push({
-            name: e.text(),
-            url: e.attr('href'),
-        })
-    });
+        if (!data.length) {
+            data = parseDoc(url[1]);
+        }
+    }
 
     if (data.length) return Response.success(data);
 
@@ -43,3 +39,27 @@ function redirect(url) {
 
     return url;
 }
+
+function parseDoc(url) {
+    var doc = Http.get(url).html();
+    var data = [];
+
+    var elems = $.QA(doc, 'div.volume-list > div > ul > li');
+    elems.forEach(function(e) {
+        var vip = hasClass(e, 'vip') ? '[VIP] ' : '';
+        data.push({
+            name: vip + $.Q(e, 'a').text(),
+            url: $.Q(e, 'a').attr('href'),
+        })
+    });
+
+    return data;
+}
+
+function hasClass(element, str) {
+    var className = element.attr('class');
+    var classList = className.split(/(\s+)/).filter(s => s.trim().length > 0);
+
+    return classList.includes(str);
+}
+
