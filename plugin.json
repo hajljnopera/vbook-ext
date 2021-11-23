@@ -53,10 +53,10 @@
       "name": "biqubao",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/plugin.zip",
-      "version": 2,
-      "source": "https://www.biqubao.com",
+      "version": 3,
+      "source": "https://www.biqugee.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/icon.png",
-      "description": "Đọc truyện trên trang https://www.biqubao.com"
+      "description": "Đọc truyện trên trang https://www.biqugee.com"
     },
     {
       "name": "bxwxorg",

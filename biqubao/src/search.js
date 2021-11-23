@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(key, page) {
-    var host = 'https://www.biqubao.com';
+    var host = 'https://www.biqugee.com';
     page = page || '1';
     var searchUrl = '{0}/search.php?q={1}&p={2}';
     var http = Http.get(String.format(searchUrl, host, key, page));

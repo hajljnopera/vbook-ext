@@ -9,7 +9,7 @@
 | zongheng     	| http://www.zongheng.com     	|
 | 69shu        	| https://www.69shu.com       	|
 | 630shu       	| https://www.630shu.net      	|
-| biqubao      	| https://www.biqubao.com     	|
+| biqubao      	| https://www.biqugee.com     	|
 | bxwxorg      	| https://www.bxwxorg.com     	|
 | haitanglin   	| https://www.haitanglin.com  	|
 | liquge       	| http://www.liquge.com       	|
