@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://www.piaotian5.com';
+    var host = 'https://www.piaotian5.net';
 
     var doc = Http.get(host + url).html();
     var data = [];
@@ -21,7 +21,7 @@ function execute(url, page) {
         data.push({
             name: $.Q(e, '.s2 a').text(),
             link: link.append('/'),
-            cover: cover || 'https://www.piaotian5.com/images/nocover.jpg',
+            cover: cover || 'https://www.piaotian5.net/images/nocover.jpg',
             description: $.Q(e, '.s3 a').text(),
             host: host
         })

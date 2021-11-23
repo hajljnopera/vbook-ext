@@ -1,7 +1,8 @@
 load('libs.js');
 
 function execute(url) {
-    url = url.replace('m.piaotian5.com', 'www.piaotian5.com');
+    var host = 'https://www.piaotian5.net';
+    url = url.replace('m.piaotian5.net', 'www.piaotian5.net');
     var doc = Http.get(url).html();
     
     var data = [];
@@ -19,7 +20,7 @@ function execute(url) {
         data.push({
             name: $.Q(e, 'a').text(),
             url: e.attr('href'),
-            host: 'https://www.piaotian5.com'
+            host: host
         })
     });
 

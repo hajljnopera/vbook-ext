@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(key, page) {
-    var host = 'https://www.piaotian5.com';
+    var host = 'https://www.piaotian5.net';
     var searchUrl = '{0}/s.php?ie=gbk&q={1}';
     var http = Http.get(String.format(searchUrl, host, key));
     var doc = http.html('gbk');

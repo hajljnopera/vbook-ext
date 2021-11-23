@@ -15,7 +15,7 @@
 | liquge       	| http://www.liquge.com       	|
 | mytxt        	| http://www.mytxt.cc         	|
 | nofff        	| https://www.nofff.com       	|
-| piaotian5    	| https://www.piaotian5.com   	|
+| piaotian5    	| https://www.piaotian5.net   	|
 | ptwxz        	| https://www.ptwxz.com       	|
 | quanben      	| http://quanben.io           	|
 | shouda88     	| https://www.shouda88.com    	|

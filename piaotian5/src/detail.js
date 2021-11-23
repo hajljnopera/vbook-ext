@@ -1,11 +1,11 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'https://www.piaotian5.com';
-    url = url.replace('m.piaotian5.com', 'www.piaotian5.com');
+    var host = 'https://www.piaotian5.net';
+    url = url.replace('m.piaotian5.net', 'www.piaotian5.net');
     var doc = Http.get(url).html();
 
-    var coverImg = $.Q(doc, '#fmimg img').attr('src').mayBeFillHost(host);
+    var coverImg = $.Q(doc, '#fmimg img').attr('src');
 	var author = $.Q(doc, '#info p').text().replace(/作.*者：/, '');
 
     return Response.success({

@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    url = url.replace('m.piaotian5.com', 'www.piaotian5.com');
+    url = url.replace('m.piaotian5.net', 'www.piaotian5.net');
     var doc = Http.get(url).html();
     var htm = $.Q(doc, '#content').html();
 

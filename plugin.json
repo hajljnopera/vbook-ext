@@ -107,10 +107,10 @@
       "name": "piaotian5",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/plugin.zip",
-      "version": 2,
-      "source": "https://www.piaotian5.com",
+      "version": 3,
+      "source": "https://www.piaotian5.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/icon.png",
-      "description": "Đọc truyện trên trang https://www.piaotian5.com"
+      "description": "Đọc truyện trên trang https://www.piaotian5.net"
     },
     {
       "name": "ptwxz",
