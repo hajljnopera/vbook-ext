@@ -8,7 +8,7 @@
       "name": "qidian",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/plugin.zip",
-      "version": 4,
+      "version": 5,
       "source": "https://www.qidian.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/icon.png",
       "description": "Đọc truyện trên trang https://www.qidian.com"
@@ -107,7 +107,7 @@
       "name": "piaotian5",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/plugin.zip",
-      "version": 3,
+      "version": 4,
       "source": "https://www.piaotian5.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/icon.png",
       "description": "Đọc truyện trên trang https://www.piaotian5.net"
@@ -116,7 +116,7 @@
       "name": "ptwxz",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ptwxz/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://www.ptwxz.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ptwxz/icon.png",
       "description": "Đọc truyện trên trang https://www.ptwxz.com"

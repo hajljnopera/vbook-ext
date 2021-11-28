@@ -3,41 +3,48 @@ load('libs.js');
 function execute(url) {
     var host = 'https://book.qidian.com';
     url = url.replace(/m\.qidian\.com\/book\/(\d+)/, 'book.qidian.com/info/$1');
-    var http = Http.get(url);
-    var doc = http.html();
-    var data = [];
 
-    parseDoc(doc, data);
-    if (data.length) return Response.success(data);
+    let response = fetch(url);
 
-    // API
-    var bookId = url.match(/qidian\.com\/(info|book)\/(\d+)/)[2];
-    var cookies = http.cookie();
-    var _csrfToken = cookies.match(/_csrfToken=(.*?);/)[1];
+    if (response.ok) {
+        let doc = response.html();
 
-    var ajaxUrl = 'https://book.qidian.com/ajax/book/category?_csrfToken={0}&bookId={1}';
-    var json = Http.get(String.format(ajaxUrl, _csrfToken, bookId)).string();
+        var data = [];
 
-    var j = JSON.parse(json);
+        parseDoc(doc, data);
+        if (data.length) return Response.success(data);
 
-    if (j.code == 1) return Response.error(url);
+        // API
+        var bookId = url.match(/qidian\.com\/(info|book)\/(\d+)/)[2];
+        var cookies = response.header("Set-Cookie");
 
-    var freeFm = 'https://read.qidian.com/chapter/{0}/{1}';
-    var vipFm = 'https://vipreader.qidian.com/chapter/{0}/{1}';
-    
-    j.data.vs.forEach(function(section){
-        var chapters = section.cs;
-        chapters.forEach(function(chap){
-            data.push({
-                name: (section.hS ? '[VIP] ' : '') + chap.cN,
-                url: String.format(section.hS ? vipFm : freeFm, bookId, chap.id),
-                host: 'https://www.qidian.com'
+        var _csrfToken = cookies.match(/_csrfToken=(.*?);/)[1];
+
+        var ajaxUrl = 'https://book.qidian.com/ajax/book/category?_csrfToken={0}&bookId={1}';
+        var json = Http.get(String.format(ajaxUrl, _csrfToken, bookId)).string();
+
+        var j = JSON.parse(json);
+
+        if (j.code == 1) return Response.error(url);
+
+        var freeFm = 'https://read.qidian.com/chapter/{0}/{1}';
+        var vipFm = 'https://vipreader.qidian.com/chapter/{0}/{1}';
+        
+        j.data.vs.forEach(function(section){
+            var chapters = section.cs;
+            chapters.forEach(function(chap){
+                data.push({
+                    name: (section.hS ? '[VIP] ' : '') + chap.cN,
+                    url: String.format(section.hS ? vipFm : freeFm, bookId, chap.id),
+                    host: 'https://www.qidian.com'
+                })
             })
         })
-    })
 
-    if (data.length) return Response.success(data);
-    return Response.error(url);
+        if (data.length) return Response.success(data);
+        return Response.error(url);
+    }
+    return null;
 }
 
 function parseDoc(doc, arr) {
@@ -57,5 +64,3 @@ function parseDoc(doc, arr) {
         })
     })
 }
-
-

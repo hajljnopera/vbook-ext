@@ -63,13 +63,8 @@ var TypeChecker = {
 
 function log(o, msg) {
     Console.log('___' + (msg || '') + '___');
-    if (TypeChecker.isArray(o) || TypeChecker.isObject(o)) {
-        try {
-            Console.log(JSON.stringify(o, null, 2));
-        } 
-        catch(e) {
-            Console.log(o);
-        }
+    if (TypeChecker.isArray(o)) {
+        Console.log(JSON.stringify(o, null, 2));
     }
     else {
         Console.log(o);
@@ -77,16 +72,17 @@ function log(o, msg) {
 }
 
 function cleanHtml(html) {
-  // trim br tags
-  html = html.replace(/(^(<br>\s*)+|(<br>\s*)+$)/gm, '');
-  // remove duplicate br tags
-  html = html.replace(/(<br>\s*){2,}/gm, '<br>');
-  // strip html comments
-  html = html.replace(/<!--[^>]*-->/gm, '');
-  // html decode
-  html = html.replace(/&nbsp;/g, '');
-  
-  return html;
+    html = html.replace(/\n/g, '<br>');
+    // remove duplicate br tags
+    html = html.replace(/(<br>\s*){2,}/gm, '<br>');
+    // strip html comments
+    html = html.replace(/<!--[^>]*-->/gm, '');
+    // html decode
+    html = html.replace(/&nbsp;/g, '');
+    // trim br tags
+    html = html.replace(/(^(\s*<br>\s*)+|(<br>\s*)+$)/gm, '');
+
+    return html.trim();
 }
 
 
@@ -127,13 +123,15 @@ var $ = {
             }
         }
 
+        var count = els.size();
+        
         if (o.reverse) {
-            for (var i = els.size() - 1; i >= 0; i--) {
+            for (var i = count - 1; i >= 0; i--) {
                 var item = els.get(i);
                 processItem(item);
             }
         } else {
-            for (var i = 0; i < els.size(); i++) {
+            for (var i = 0; i < count; i++) {
                 var item = els.get(i);
                 processItem(item);
             }
@@ -145,6 +143,3 @@ var $ = {
     }
 
 }
-
-
-
