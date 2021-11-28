@@ -2,11 +2,11 @@
   "metadata": {
     "name": "shubaow",
     "author": "hajljnopera",
-    "version": 2,
+    "version": 3,
     "source": "https://www.shubaow.net",
     "regexp": "(www|m)\\.shubaow\\.net/\\d+[_/]\\d+/?$",
     "description": "Đọc truyện trên trang https://www.shubaow.net",
-    "local": "vi-VN",
+    "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"
   },
