@@ -2,11 +2,11 @@
   "metadata": {
     "name": "trxs",
     "author": "hajljnopera",
-    "version": 2,
+    "version": 3,
     "source": "http://trxs.cc",
     "regexp": "trxs\\.cc/tongren/\\d+\\.html",
     "description": "Đọc truyện trên trang http://trxs.cc",
-    "local": "vi-VN",
+    "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"
   },

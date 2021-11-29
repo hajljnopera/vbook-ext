@@ -15,25 +15,30 @@ function execute(url, page) {
     else {
       newUrl = String.format(fm, page);
     }
+	
+    var response = fetch(newUrl);
+    if (response.ok) {
+        var doc = response.html('gb2312');
+		
+		var data = [];
 
-    var doc = Http.get(newUrl).html('gb2312');
-    var data = [];
+		var elems = $.QA(doc, 'div.bk > a');
+		if (!elems.length) return Response.error(url);
+		
+		elems.forEach(function(e) {
+			data.push({
+				name: $.Q(e, 'div.infos > h3').text(),
+				link: e.attr('href'),
+				cover: $.Q(e, 'div.pic > img').attr('src'),
+				description: '',
+				host: host
+			})
+		})
 
-    var elems = $.QA(doc, 'div.bk > a');
-    if (!elems.length) return Response.error(url);
-    
-    elems.forEach(function(e) {
-        data.push({
-            name: $.Q(e, 'div.infos > h3').text(),
-            link: e.attr('href'),
-            cover: $.Q(e, 'div.pic > img').attr('src'),
-            description: '',
-            host: host
-        })
-    })
+		var next = $.Q(doc, 'div.page > b').text();
+		if (next) next = parseInt(next) + 1;
 
-    var next = $.Q(doc, 'div.page > b').text();
-    if (next) next = parseInt(next, 10) + 1;
-
-    return Response.success(data, next.toString())
+		return Response.success(data, next.toString());
+    }
+    return null;
 }

@@ -170,7 +170,7 @@
       "name": "trxs",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "http://trxs.cc",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/icon.png",
       "description": "Đọc truyện trên trang http://trxs.cc"
