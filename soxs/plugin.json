@@ -6,7 +6,7 @@
     "source": "https://www.soxs.cc",
     "regexp": "(www|m|wap)\\.soxs(cc)?\\.cc(/book)?/([A-Z][a-z\\d]{0,10})+(\\.html|/)?$",
     "description": "Đọc truyện trên trang https://www.soxs.cc",
-    "local": "vi-VN",
+    "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"
   },
