@@ -8,7 +8,7 @@
       "name": "qidian",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/plugin.zip",
-      "version": 5,
+      "version": 6,
       "source": "https://www.qidian.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/icon.png",
       "description": "Đọc truyện trên trang https://www.qidian.com"
@@ -44,7 +44,7 @@
       "name": "630shu",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/plugin.zip",
-      "version": 3,
+      "version": 4,
       "source": "https://www.630shu.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/icon.png",
       "description": "Đọc truyện trên trang https://www.630shu.net"
@@ -53,7 +53,7 @@
       "name": "biqubao",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/plugin.zip",
-      "version": 3,
+      "version": 4,
       "source": "https://www.biqugee.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/icon.png",
       "description": "Đọc truyện trên trang https://www.biqugee.com"

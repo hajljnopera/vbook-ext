@@ -2,11 +2,11 @@
   "metadata": {
     "name": "biqubao",
     "author": "hajljnopera",
-    "version": 3,
+    "version": 4,
     "source": "https://www.biqugee.com",
     "regexp": "(www|m)\\.biqu(bao|gee)\\.com/v?book/\\d+/?$",
     "description": "Đọc truyện trên trang https://www.biqugee.com",
-    "local": "vi-VN",
+    "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"
   },

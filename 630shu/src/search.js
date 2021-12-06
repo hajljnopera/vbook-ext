@@ -9,38 +9,40 @@ function execute(key, page) {
         return GBK.encode(s);
     }
 
-    var http = Http.get(String.format(searchUrl, host, gbkEncode(key)));
-    var doc = http.html('gbk');
+    var response = fetch(String.format(searchUrl, host, gbkEncode(key)));
+    if (response.ok) {
+        var doc = response.html('gbk');
+		var data = [];
 
-    var data = [];
+		var elems = $.QA(doc, 'table tr:not([align])');
+		if (elems.length) {
+			elems.forEach(function(e) {
+				var link = $.Q(e, 'a').attr('href');
+				data.push({
+					name: $.Q(e, 'a').text().trim(),
+					link: $.Q(e, 'a').attr('href'),
+					cover: genCover(link),
+					description: $.Q(e, 'td.odd', 1).text(),
+					host: host
+				})
+			})
 
-    var elems = $.QA(doc, 'table tr:not([align])');
-    if (elems.length) {
-        elems.forEach(function(e) {
-            var link = $.Q(e, 'a').attr('href');
-            data.push({
-                name: $.Q(e, 'a').text().trim(),
-                link: $.Q(e, 'a').attr('href'),
-                cover: genCover(link),
-                description: $.Q(e, 'td.odd', 1).text(),
-                host: host
-            })
-        })
+			return Response.success(data);
+		}
 
-        return Response.success(data);
+		if ($.Q(doc, '#picbox > div.img_in > img').attr('src')) { // detail.js
+			return Response.success([{
+				name: $.Q(doc, '#info > h1').text(),
+				link: $.Q(doc, 'head > link').attr('href'), //
+				cover: $.Q(doc, '#picbox > div.img_in > img').attr('src'),
+				description: $.Q(doc, '#info > div.options > span:nth-child(1) > a').text().trim(), // author
+				host: host
+			}]);
+		}
+
+		return Response.error(key);
     }
-
-    if ($.Q(doc, '#picbox > div.img_in > img').attr('src')) { // detail.js
-        return Response.success([{
-            name: $.Q(doc, '#info > h1').text(),
-            link: $.Q(doc, 'head > link').attr('href'), //
-            cover: $.Q(doc, '#picbox > div.img_in > img').attr('src'),
-            description: $.Q(doc, '#info > div.options > span:nth-child(1) > a').text().trim(), // author
-            host: host
-        }]);
-    }
-
-    return Response.error(key);
+    return null;
 }
 
 function genCover(bookUrl) {
