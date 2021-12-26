@@ -2,7 +2,7 @@ load('libs.js');
 
 function execute(url) {
     var host = 'http://trxs.cc';
-    url = url.replace('m.trxs.cc', 'trxs.cc');
+    url = url.replace('m.trxs.cc', 'trxs.cc').replace('www.trxs.cc', 'trxs.cc');
 
     var response = fetch(url);
     if (response.ok) {

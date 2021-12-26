@@ -170,7 +170,7 @@
       "name": "trxs",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/plugin.zip",
-      "version": 3,
+      "version": 4,
       "source": "http://trxs.cc",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/icon.png",
       "description": "Đọc truyện trên trang http://trxs.cc"
@@ -206,7 +206,7 @@
       "name": "czbooks",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://czbooks.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/icon.png",
       "description": "Đọc truyện trên trang https://czbooks.net"
@@ -231,15 +231,6 @@
       "description": "Đọc truyện trên trang https://manhwas.men"
     },
     {
-      "name": "hentaivv",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaivv/plugin.zip",
-      "version": 2,
-      "source": "https://hentaivv.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hentaivv/icon.png",
-      "description": "Đọc truyện trên trang https://hentaivv.com"
-    },
-    {
       "name": "rawdevart",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/plugin.zip",
@@ -252,7 +243,7 @@
       "name": "hiperdex",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/plugin.zip",
-      "version": 3,
+      "version": 4,
       "source": "https://hiperdex.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/hiperdex/icon.png",
       "description": "Đọc truyện trên trang https://hiperdex.com"
@@ -319,15 +310,6 @@
       "source": "https://manga18.club",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/manga18.club/icon.png",
       "description": "Đọc truyện trên trang https://manga18.club"
-    },
-    {
-      "name": "mangamiso",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangamiso/plugin.zip",
-      "version": 1,
-      "source": "https://mangamiso.net",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangamiso/icon.png",
-      "description": "Đọc truyện trên trang https://mangamiso.net"
     },
     {
       "name": "manga-raw",

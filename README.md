@@ -29,7 +29,6 @@
 | czbooks      	| https://czbooks.net         	|
 | manga18fx    	| https://manga18fx.com       	|
 | manhwas      	| https://manhwas.men         	|
-| hentaivv     	| https://hentaivv.com        	|
 | rawdevart    	| https://rawdevart.com       	|
 | hiperdex     	| https://hiperdex.com        	|
 | mangayeh     	| https://mangayeh.com        	|
@@ -39,7 +38,6 @@
 | hentairead   	| https://hentairead.com      	|
 | hentairules  	| https://www.hentairules.net 	|
 | manga18.club 	| https://manga18.club        	|
-| mangamiso    	| https://mangamiso.net       	|
 | manga-raw    	| https://www.manga-raw.club  	|
 | Yuri Neko    	| https://yurineko.net        	|
 | truyensac    	| http://truyensac.net        	|
