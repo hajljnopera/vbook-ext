@@ -2,16 +2,21 @@ load('libs.js');
 
 function execute(url) {
     url = url.replace('m.69shu.com', 'www.69shu.com');
-    var doc = Http.get(url).html('gbk');
 
-    var htm = $.Q(doc, 'div.txtnav', {remove: ['h1', 'div']}).html();
+    let response = fetch(url);
+    if (response.ok) {
+        let doc = response.html('gbk');
 
-    htm = cleanHtml(htm)
-        .replace(/^ *第\d+章.*?<br>/, '') // Ex: '  第11745章 大结局，终<br>'
-        .replace('(本章完)', '')
-        ;
-    
-    log(htm);
+        var htm = $.Q(doc, 'div.txtnav', {remove: ['h1', 'div']}).html();
 
-    return Response.success(htm);
+        htm = cleanHtml(htm)
+            .replace(/^ *第\d+章.*?<br>/, '') // Ex: '  第11745章 大结局，终<br>'
+            .replace('(本章完)', '')
+            ;
+        
+        // log(htm);
+
+        return Response.success(htm);
+    }
+    return null;
 }

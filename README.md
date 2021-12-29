@@ -27,6 +27,7 @@
 | lrxs         	| https://www.lrxs.org        	|
 | xinyushuwu   	| https://www.xinyushuwu.com  	|
 | czbooks      	| https://czbooks.net         	|
+| cijige      	| https://www.cijige.com        |
 | manga18fx    	| https://manga18fx.com       	|
 | manhwas      	| https://manhwas.men         	|
 | rawdevart    	| https://rawdevart.com       	|
