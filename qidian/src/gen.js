@@ -6,7 +6,7 @@ function execute(url, page) {
     url = (host + url).formatUnicorn({
         page: page || 1,
         year: new Date().getFullYear(),
-        month: new Date().getMonth() + 1
+        month: (new Date().getMonth() + 1).toString().padStart(2, '0')
     });
 
     // log(url);
