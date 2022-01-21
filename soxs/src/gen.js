@@ -1,5 +1,9 @@
 load('libs.js');
 
+const options = {
+    loadCover: true
+}
+
 function execute(url, page) {
     var host = 'https://www.soxscc.cc';
     if (!page) page = '1';
@@ -11,51 +15,55 @@ function execute(url, page) {
     if (response.ok) {
         var doc = response.html();
 
-		var data = [];
+        var data = [];
 
-		var elems = $.QA(doc, '#newscontent > .l li');
-		if (!elems.length) return Response.error(url);
+        var elems = $.QA(doc, '#newscontent > .l li');
+        if (!elems.length) return Response.error(url);
 
-		var imgErr = host + '/static/image/nocover.jpg';
+        var imgErr = host + '/static/image/nocover.jpg';
 
-		elems.forEach(function(e) {
-			var link = $.Q(e, '.s2 > a').attr('href');
-			data.push({
-				name: $.Q(e, '.s2 > a').text(),
-				link: link,
-				cover: genCover(link, host) || imgErr,
-				description: $.Q(e, '.s3 > a').text(),
-				host: host
-			})
-		})
+        elems.forEach(function(e) {
+            var link = $.Q(e, '.s2 > a').attr('href');
+            data.push({
+                name: $.Q(e, '.s2 > a').text(),
+                link: link,
+                cover: genCover(link, host) || imgErr,
+                description: $.Q(e, '.s3 > a').text(),
+                host: host
+            })
+        })
 
-		// log(data);
+        // log(data);
 
-		if (!hasNextPage) {
-			return Response.success(data);
-		}
+        if (!hasNextPage) {
+            return Response.success(data);
+        }
 
-		var m, next;
-		var currentPage = $.Q(doc, 'div.pagelink > a.pgchu').text();
-		if (currentPage && (m = currentPage.match(/(\d+)/)) && m[1]) {
-			next = parseInt(m[1]) + 1;
-		}
-		else {
-			next = 2;
-		}
+        var m, next;
+        var currentPage = $.Q(doc, 'div.pagelink > a.pgchu').text();
+        if (currentPage && (m = currentPage.match(/(\d+)/)) && m[1]) {
+            next = parseInt(m[1]) + 1;
+        }
+        else {
+            next = 2;
+        }
 
-		return Response.success(data, next.toString());
+        return Response.success(data, next.toString());
     }
     return null;
 }
 
 function genCover(link, host) {
+    if (!options.loadCover) {
+        return 'https://www.soxscc.net/tpl/pc/image/logo.gif';
+    }
+
     var response = fetch(host + link);
     if (response.ok) {
         var doc = response.html();
-	
-		var img = $.Q(doc, 'meta[property="og:image"]').attr('content');
-		if (img) return img.prepend('https:');
+    
+        var img = $.Q(doc, 'meta[property="og:image"]').attr('content');
+        if (img) return img.prepend('https:');
     }
 
     return '';

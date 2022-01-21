@@ -1,0 +1,8 @@
+https://m.soxs.cc/HaiZeiKaiJuYiDaoKanFanAiSi0
+https://www.soxscc.net/HaiZeiKaiJuYiDaoKanFanAiSi0/
+https://www.soxs.cc/KangZhanTieXueLu_BaQianLiLuTieYuXue/
+https://m.soxscc.cc/KangZhanTieXueLu_BaQianLiLuTieYuXue/
+https://m.soxs.cc/book/HaiZeiKaiJuYiDaoKanFanAiSi0.html
+
+---
+(www|m|wap)\.soxs(cc)?\.(cc|net)(\/book)?\/[^\/]+\/?$
