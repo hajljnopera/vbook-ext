@@ -5,3 +5,4 @@ data.json
 *.rar
 *.bak
 _*/
+.test

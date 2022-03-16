@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    var host = 'http://truyensac.net';
+    var host = 'https://truyensex.top';
     var doc = Http.get(url).html();
 
     return Response.success({
@@ -23,5 +23,5 @@ function getRandomInt(min, max) {
 
 // (づ｡◕‿‿◕｡)づ
 function randomCover() {
-    return 'https://truyensac.net/anh/anhgaifull/' + getRandomInt(1, 4500) + '.jpg';
+    return 'https://truyensex.top/anh/anhgaifull/' + getRandomInt(1, 4500) + '.jpg';
 }

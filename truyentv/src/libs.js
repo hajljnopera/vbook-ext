@@ -80,7 +80,7 @@ function cleanHtml(html) {
   html = html.replace(/<!--[^>]*-->/gm, '');
   // html decode
   html = html.replace(/&nbsp;/g, '');
-  
+
   return html;
 }
 
@@ -123,7 +123,7 @@ var $ = {
         }
 
         var count = els.size();
-        
+
         if (o.reverse) {
             for (var i = count - 1; i >= 0; i--) {
                 var item = els.get(i);

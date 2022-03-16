@@ -2,10 +2,10 @@
   "metadata": {
     "name": "TruyenSac",
     "author": "hajljnopera",
-    "version": 3,
-    "source": "https://truyensac.net",
-    "regexp": "truyensac\\.net/[^/]+/?$",
-    "description": "Đọc truyện trên trang https://truyensac.net",
+    "version": 4,
+    "source": "https://truyensex.top",
+    "regexp": "truyensex\\.top/[^/]+/?$",
+    "description": "Đọc truyện trên trang https://truyensex.top",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"
