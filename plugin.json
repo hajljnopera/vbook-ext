@@ -363,6 +363,15 @@
       "source": "https://mangaowl.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangaowl/icon.png",
       "description": "Đọc truyện trên trang https://mangaowl.net"
+    },
+    {
+      "name": "8muses",
+      "author": "hajljnopera",
+      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/8muses/plugin.zip",
+      "version": 1,
+      "source": "https://8muses.com",
+      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/8muses/icon.png",
+      "description": "Đọc truyện trên trang https://8muses.com"
     }
   ]
 }
