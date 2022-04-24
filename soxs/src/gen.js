@@ -1,35 +1,34 @@
 load('libs.js');
+load('config.js');
 
 const options = {
     loadCover: true
 }
 
 function execute(url, page) {
-    var host = 'https://www.soxscc.cc';
     if (!page) page = '1';
     var hasNextPage = url != '/';
-    var newUrl = String.format(host + url + (page == '1' ? '' : '{0}.html'), page);
-    // log(newUrl);
+    var newUrl = String.format(BASE_URL + url + (page == '1' ? '' : '{0}.html'), page);
+    log(newUrl);
 
     var response = fetch(newUrl);
     if (response.ok) {
         var doc = response.html();
-
         var data = [];
 
         var elems = $.QA(doc, '#newscontent > .l li');
         if (!elems.length) return Response.error(url);
 
-        var imgErr = host + '/static/image/nocover.jpg';
+        var imgErr = BASE_URL + '/static/image/nocover.jpg';
 
         elems.forEach(function(e) {
             var link = $.Q(e, '.s2 > a').attr('href');
             data.push({
                 name: $.Q(e, '.s2 > a').text(),
                 link: link,
-                cover: genCover(link, host) || imgErr,
+                cover: genCover(link) || imgErr,
                 description: $.Q(e, '.s3 > a').text(),
-                host: host
+                host: BASE_URL
             })
         })
 
@@ -53,12 +52,12 @@ function execute(url, page) {
     return null;
 }
 
-function genCover(link, host) {
+function genCover(link) {
     if (!options.loadCover) {
-        return 'https://www.soxscc.net/tpl/pc/image/logo.gif';
+        return BASE_URL + '/tpl/pc/image/logo.gif';
     }
 
-    var response = fetch(host + link);
+    var response = fetch(BASE_URL + link);
     if (response.ok) {
         var doc = response.html();
     

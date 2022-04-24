@@ -1,8 +1,8 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    var host = 'https://www.soxscc.cc';
-    url = correctUrl(url, host);
+    url = correctUrl(url);
     // log(url);
 
     var response = fetch(url);
@@ -14,11 +14,11 @@ function execute(url) {
 
         return Response.success({
             name: $.Q(doc, '.xiaoshuo > h1').text(),
-            cover: $.Q(doc, '.book_cover img').attr('src').mayBeFillHost(host),
+            cover: $.Q(doc, '.book_cover img').attr('src').mayBeFillHost(BASE_URL),
             author: author,
             description: $.Q(doc, '#intro', {remove: '.tags, q'}).html(),
             detail: String.format('作者: {0}<br>{1}', author, lastUpdated),
-            host: host
+            host: BASE_URL
         });
     }
     return null;
@@ -26,7 +26,7 @@ function execute(url) {
 
 // https://m.soxs.cc/book/KangZhanTieXueLu_BaQianLiLuTieYuXue.html
 // --> https://www.soxs.cc/KangZhanTieXueLu_BaQianLiLuTieYuXue
-function correctUrl(url, host) {
+function correctUrl(url) {
     var s = url.match(/(([_A-Z][a-z\d]{0,10})+)/)[1];
-    return host + '/' + s;
+    return BASE_URL + '/' + s;
 }
