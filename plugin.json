@@ -8,7 +8,7 @@
       "name": "qidian",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/plugin.zip",
-      "version": 8,
+      "version": 9,
       "source": "https://www.qidian.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/icon.png",
       "description": "Đọc truyện trên trang https://www.qidian.com"
@@ -341,10 +341,10 @@
       "name": "truyensac",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/plugin.zip",
-      "version": 4,
-      "source": "https://truyensex.top",
+      "version": 5,
+      "source": "http://truyenheo.org",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
-      "description": "Đọc truyện trên trang https://truyensex.top"
+      "description": "Đọc truyện trên trang http://truyenheo.org"
     },
     {
       "name": "skymanga",
