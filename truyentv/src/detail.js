@@ -1,17 +1,20 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    var host = 'https://truyensex.top';
-    var doc = Http.get(url).html();
-
-    return Response.success({
-        name: $.Q(doc, '.bai-viet-box h1 > a').text(),
-        cover: randomCover(),
-        author: $.Q(doc, '.bai-viet-box h1 > a', 1).text().replace('Tác giả', '').trim() || 'Sưu tầm',
-        description: 'Nghiêm cấm trẻ em dưới 18 tuổi',
-        detail: '',
-        host: host
-    });
+    var response = fetch(url);
+    if (response.ok) {
+        var doc = response.html();
+        return Response.success({
+            name: $.Q(doc, '.bai-viet-box h1 > a').text(),
+            cover: randomCover(),
+            author: $.Q(doc, '.bai-viet-box h1 > a', 1).text().replace('Tác giả', '').trim() || 'Sưu tầm',
+            description: 'Nghiêm cấm trẻ em dưới 18 tuổi',
+            detail: '',
+            host: BASE_URL
+        });
+    }
+    return null;
 }
 
 // https://stackoverflow.com/a/1527820
@@ -23,5 +26,5 @@ function getRandomInt(min, max) {
 
 // (づ｡◕‿‿◕｡)づ
 function randomCover() {
-    return 'https://truyensex.top/anh/anhgaifull/' + getRandomInt(1, 4500) + '.jpg';
+    return BASE_URL + '/anh/anhgaifull/' + getRandomInt(1, 4500) + '.jpg';
 }

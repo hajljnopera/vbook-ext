@@ -2,7 +2,8 @@ load('libs.js');
 
 function execute(url) {
     var host = 'https://book.qidian.com';
-    url = url.replace(/m\.qidian\.com\/book\/(\d+)/, 'book.qidian.com/info/$1');
+    url = 'https://book.qidian.com/info/' + url.match(/\d+/)[0];
+    // log(url);
 
     let response = fetch(url);
 
@@ -12,6 +13,7 @@ function execute(url) {
         var data = [];
 
         parseDoc(doc, data);
+        log(data.length);
         if (data.length) return Response.success(data);
 
         // API

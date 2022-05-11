@@ -2,13 +2,14 @@
   "metadata": {
     "name": "TruyenSac",
     "author": "hajljnopera",
-    "version": 4,
-    "source": "https://truyensex.top",
-    "regexp": "truyensex\\.top/[^/]+/?$",
-    "description": "Đọc truyện trên trang https://truyensex.top",
-    "local": "vi-VN",
+    "version": 5,
+    "source": "http://truyenheo.org",
+    "regexp": "truyenheo\\.org/[^/]+/?$",
+    "description": "Đọc truyện trên trang http://truyenheo.org",
+    "locale": "vi_VN",
     "language": "javascript",
-    "type": "novel"
+    "type": "novel",
+    "tag": "nsfw"
   },
   "script": {
     "home": "home.js",
