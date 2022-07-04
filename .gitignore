@@ -1,6 +1,6 @@
 .idea/*
 *.iml
-*test.json
+test.json
 data.json
 *.rar
 *.bak

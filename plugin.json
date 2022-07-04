@@ -50,24 +50,6 @@
       "description": "Đọc truyện trên trang https://www.630shu.net"
     },
     {
-      "name": "biqubao",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/plugin.zip",
-      "version": 4,
-      "source": "https://www.biqugee.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/biqubao/icon.png",
-      "description": "Đọc truyện trên trang https://www.biqugee.com"
-    },
-    {
-      "name": "bxwxorg",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/bxwxorg/plugin.zip",
-      "version": 2,
-      "source": "https://www.bxwxorg.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/bxwxorg/icon.png",
-      "description": "Đọc truyện trên trang https://www.bxwxorg.com"
-    },
-    {
       "name": "haitanglin",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/haitanglin/plugin.zip",
@@ -84,24 +66,6 @@
       "source": "http://www.liquge.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/liquge/icon.png",
       "description": "Đọc truyện trên trang http://www.liquge.com"
-    },
-    {
-      "name": "mytxt",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mytxt/plugin.zip",
-      "version": 1,
-      "source": "http://www.mytxt.cc",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mytxt/icon.png",
-      "description": "Đọc truyện trên trang http://www.mytxt.cc"
-    },
-    {
-      "name": "nofff",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/nofff/plugin.zip",
-      "version": 1,
-      "source": "https://www.nofff.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/nofff/icon.png",
-      "description": "Đọc truyện trên trang https://www.nofff.com"
     },
     {
       "name": "piaotian5",
@@ -131,42 +95,6 @@
       "description": "Đọc truyện trên trang http://quanben.io"
     },
     {
-      "name": "shouda88",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shouda88/plugin.zip",
-      "version": 5,
-      "source": "https://www.shouda88.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shouda88/icon.png",
-      "description": "Đọc truyện trên trang https://www.shouda88.com"
-    },
-    {
-      "name": "shubaow",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shubaow/plugin.zip",
-      "version": 3,
-      "source": "https://www.shubaow.net",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shubaow/icon.png",
-      "description": "Đọc truyện trên trang https://www.shubaow.net"
-    },
-    {
-      "name": "shutxt",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shutxt/plugin.zip",
-      "version": 1,
-      "source": "https://www.shutxt.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/shutxt/icon.png",
-      "description": "Đọc truyện trên trang https://www.shutxt.com"
-    },
-    {
-      "name": "soxs",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/plugin.zip",
-      "version": 8,
-      "source": "https://www.soxscc.cc",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/soxs/icon.png",
-      "description": "Đọc truyện trên trang https://www.soxscc.cc"
-    },
-    {
       "name": "trxs",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/trxs/plugin.zip",
@@ -194,15 +122,6 @@
       "description": "Đọc truyện trên trang https://www.lrxs.org"
     },
     {
-      "name": "xinyushuwu",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xinyushuwu/plugin.zip",
-      "version": 1,
-      "source": "https://www.xinyushuwu.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/xinyushuwu/icon.png",
-      "description": "Đọc truyện trên trang https://www.xinyushuwu.com"
-    },
-    {
       "name": "czbooks",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/plugin.zip",
@@ -210,15 +129,6 @@
       "source": "https://czbooks.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/czbooks/icon.png",
       "description": "Đọc truyện trên trang https://czbooks.net"
-    },
-    {
-      "name": "cijige",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/cijige/plugin.zip",
-      "version": 1,
-      "source": "https://www.cijige.com",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/cijige/icon.png",
-      "description": "Đọc truyện trên trang https://www.cijige.com"
     },
     {
       "name": "manga18fx",
@@ -354,15 +264,6 @@
       "source": "https://skymanga.co",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/skymanga/icon.png",
       "description": "Đọc truyện trên trang https://skymanga.co"
-    },
-    {
-      "name": "mangaowl",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangaowl/plugin.zip",
-      "version": 1,
-      "source": "https://mangaowl.net",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/mangaowl/icon.png",
-      "description": "Đọc truyện trên trang https://mangaowl.net"
     },
     {
       "name": "8muses",
