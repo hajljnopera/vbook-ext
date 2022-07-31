@@ -2,11 +2,11 @@
   "metadata": {
     "name": "rawdevart",
     "author": "hajljnopera",
-    "version": 2,
+    "version": 3,
     "source": "https://rawdevart.com",
     "regexp": "rawdevart\\.com/comic/[^/]+/?$",
     "description": "Đọc truyện trên trang https://rawdevart.com",
-    "local": "vi-VN",
+    "locale": "ja",
     "language": "javascript",
     "type": "comic"
   },

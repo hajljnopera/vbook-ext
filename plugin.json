@@ -8,7 +8,7 @@
       "name": "qidian",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/plugin.zip",
-      "version": 9,
+      "version": 10,
       "source": "https://www.qidian.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/qidian/icon.png",
       "description": "Đọc truyện trên trang https://www.qidian.com"
@@ -152,7 +152,7 @@
       "name": "rawdevart",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "https://rawdevart.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/rawdevart/icon.png",
       "description": "Đọc truyện trên trang https://rawdevart.com"

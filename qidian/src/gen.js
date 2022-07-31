@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://www.qidian.com';
+    let host = 'https://www.qidian.com';
 
     url = (host + url).formatUnicorn({
         page: page || 1,
@@ -14,9 +14,9 @@ function execute(url, page) {
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html();
-        var data = [];
+        let data = [];
 
-        var elems = $.QA(doc, '#rank-view-list > div > ul > li');
+        let elems = $.QA(doc, '#rank-view-list > div > ul > li');
         if (!elems.length) return null;
 
         elems.forEach(function(e) {
@@ -29,7 +29,7 @@ function execute(url, page) {
             })
         })
 
-        var next = $.Q(doc, '#rank-view-list .rank-tag', -1).text();
+        let next = $.Q(doc, '#rank-view-list .rank-tag', -1).text();
         // log(next);
 
         if (next) next = +next/20 + 1; // 20 items/page

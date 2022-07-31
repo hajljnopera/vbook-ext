@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url, page) {
-    var host = 'https://www.qidian.com';
+    let host = 'https://www.qidian.com';
 
     url = String.format('https://www.qidian.com/all/chanId{0}-page{1}/', url, page);
 
@@ -9,9 +9,9 @@ function execute(url, page) {
 
     if (response.ok) {
         let doc = response.html();
-        var data = [];
+        let data = [];
 
-        var elems = $.QA(doc, 'li[data-rid]');
+        let elems = $.QA(doc, 'li[data-rid]');
         if (!elems.length) return Response.error(url);
 
         elems.forEach(function(e) {
@@ -24,7 +24,7 @@ function execute(url, page) {
             })
         })
 
-        var next = $.Q(doc, 'a.lbf-pagination-page.lbf-pagination-current').text();
+        let next = $.Q(doc, 'a.lbf-pagination-page.lbf-pagination-current').text();
         if (next) next = parseInt(next, 10) + 1;
 
         return Response.success(data, next.toString());

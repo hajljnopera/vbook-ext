@@ -1,29 +1,35 @@
 load('libs.js');
 
 function execute(url, page) {
-
     var host = 'https://rawdevart.com';
     url = String.format(host + url + '?page={0}', page || '1');
-    var doc = Http.get(url).html();
-    
-    var elems = $.QA(doc, 'div.container div.card-body div.card');
-    if (!elems.length) return Response.error(url);
-    
-    var data = [];
-    elems.forEach(function(e) {
-        data.push({
-            description: $.Q(e, 'div.title > span > small').text().trim(),
-            name: $.Q(e, 'div.title > span', {remove: 'small'}).text().trim(),
-            link: $.Q(e, 'a').attr('href'),
-            cover: $.Q(e, 'img.img-fluid').attr('src'),
-            host: host
-        })
-    });
+    // log(url);
+    let response = fetch(url);
 
-    var next = $.Q(doc, 'li.page-item.active').text();
-    next = parseInt(next, 10)+1;
+    if (response.ok) {
+        let doc = response.html();
 
-    if (next.toString() == page) return Response.success(data);
+        var elems = $.QA(doc, 'div.container div.card-body div.card');
+        if (!elems.length) return null;
+        
+        var data = [];
+        elems.forEach(function(e) {
+            data.push({
+                description: $.Q(e, 'div.title > span > small').text().trim(),
+                name: $.Q(e, 'div.title > span', {remove: 'small'}).text().trim(),
+                link: $.Q(e, 'a').attr('href'),
+                cover: $.Q(e, 'img.img-fluid').attr('src'),
+                host: host
+            })
+        });
 
-    return Response.success(data, next.toString());
+        var next = $.Q(doc, 'li.page-item.active').text();
+        next = parseInt(next, 10) + 1;
+
+        if (next.toString() == page) return Response.success(data);
+
+        return Response.success(data, next.toString());
+    }
+
+    return null;
 }

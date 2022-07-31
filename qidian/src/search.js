@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(key, page) {
-    var host = 'https://www.qidian.com';
+    let host = 'https://www.qidian.com';
 
     let response = fetch('https://www.qidian.com/search', {
         method: "GET",
@@ -12,10 +12,9 @@ function execute(key, page) {
 
     if (response.ok) {
         let doc = response.html();
+        let data = [];
 
-        var data = [];
-
-        var elems = $.QA(doc, 'li.res-book-item');
+        let elems = $.QA(doc, 'li.res-book-item');
         if (!elems.length) return Response.error(key);
 
         elems.forEach(function(e) {

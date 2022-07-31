@@ -1,6 +1,6 @@
 function execute() {
 
-    var data = [
+    let data = [
         '玄幻|xuanhuan|21',
         '奇幻|qihuan|1',
         '武侠|wuxia|2',
@@ -17,7 +17,7 @@ function execute() {
     ];
 
     data.forEach((item, index) => {
-        var p = data[index].split('|');
+        let p = data[index].split('|');
         data[index] = {
             title: p[0],
             input: p[2],
