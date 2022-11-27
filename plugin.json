@@ -44,7 +44,7 @@
       "name": "630shu",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/plugin.zip",
-      "version": 4,
+      "version": 5,
       "source": "https://www.630shu.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/icon.png",
       "description": "Đọc truyện trên trang https://www.630shu.net"
@@ -246,15 +246,6 @@
       "source": "https://yurineko.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/yurineko/icon.png",
       "description": "Đọc truyện trên trang https://yurineko.net"
-    },
-    {
-      "name": "truyensac",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/plugin.zip",
-      "version": 5,
-      "source": "http://truyenheo.org",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/truyentv/icon.png",
-      "description": "Đọc truyện trên trang http://truyenheo.org"
     },
     {
       "name": "skymanga",

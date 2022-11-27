@@ -1,1 +1,0 @@
-const BASE_URL = 'http://truyenheo.org';
