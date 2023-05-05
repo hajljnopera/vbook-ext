@@ -1,7 +1,7 @@
 load('libs.js');
 
 function execute(url) {
-    url = url.replace(/.+\.69shu\.com\/txt\/(\d+)\.htm/, 'https://www.69shu.com/$1').append('/');
+    url = url.replace(/.+\.69shu\.com\/txt\/(.*?)\.htm/, 'https://www.69shu.com/$1').append('/');
 
     let response = fetch(url);
     if (response.ok) {
