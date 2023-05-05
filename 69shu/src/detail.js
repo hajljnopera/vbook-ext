@@ -2,7 +2,7 @@ load('libs.js');
 
 function execute(url) {
     var host = 'https://www.69shu.com';
-    url = url.replace(/.+\.69shu\.com\/txt\/(\d+)\.htm/, 'https://www.69shu.com/txt/$1.htm');
+    url = url.replace(/.+\.69shu\.com\/txt\/(.*?)\.htm/, 'https://www.69shu.com/txt/$1.htm');
 
     let response = fetch(url);
     if (response.ok) {

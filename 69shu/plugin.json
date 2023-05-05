@@ -2,9 +2,9 @@
   "metadata": {
     "name": "69shu",
     "author": "hajljnopera",
-    "version": 3,
+    "version": 4,
     "source": "https://www.69shu.com",
-    "regexp": "(www|m).69shu\\.com/txt/\\d+\\.htm",
+    "regexp": "(www|m).69shu\\.com/txt/.*?\\.htm",
     "description": "Đọc truyện trên trang https://www.69shu.com",
     "locale": "vi-VN",
     "language": "javascript",
