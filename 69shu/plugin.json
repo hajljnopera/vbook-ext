@@ -2,11 +2,11 @@
   "metadata": {
     "name": "69shu",
     "author": "hajljnopera",
-    "version": 4,
-    "source": "https://www.69shu.com",
-    "regexp": "(www|m).69shu\\.com/txt/.*?\\.htm",
-    "description": "Đọc truyện trên trang https://www.69shu.com",
-    "locale": "vi-VN",
+    "version": 5,
+    "source": "https://www.69shuba.com",
+    "regexp": "(www|m).(69shu|69shuba)\\.com/(txt|book)/.*?\\.htm",
+    "description": "Đọc truyện trên trang 69shuba.com",
+    "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"
   },
@@ -15,6 +15,7 @@
     "detail": "detail.js",
     "toc": "toc.js",
     "chap": "chap.js",
+    "genre": "genre.js",
     "search": "search.js"
   }
 }

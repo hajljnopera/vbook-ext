@@ -35,10 +35,10 @@
       "name": "69shu",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/69shu/plugin.zip",
-      "version": 4,
-      "source": "https://www.69shu.com",
+      "version": 5,
+      "source": "https://www.69shuba.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/69shu/icon.png",
-      "description": "Đọc truyện trên trang https://www.69shu.com"
+      "description": "Đọc truyện trên trang https://www.69shuba.com"
     },
     {
       "name": "630shu",

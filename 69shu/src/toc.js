@@ -1,9 +1,12 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    url = url.replace(/.+\.69shu\.com\/txt\/(.*?)\.htm/, 'https://www.69shu.com/$1').append('/');
-
-    let response = fetch(url);
+    const regex = /\/(\d+)\.htm/;
+    const match = url.match(regex);
+    let book_id = match[1];
+    console.log(book_id)
+    let response = fetch(host + "/book/" + book_id +"/");
     if (response.ok) {
         let doc = response.html('gbk');
 
@@ -14,7 +17,7 @@ function execute(url) {
 			data.push({
 				name: formatName(e.text()),
 				url: e.attr('href'),
-				host: 'https://www.69shu.com'
+				host: host
 			})
 		});
 

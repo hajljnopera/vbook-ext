@@ -1,8 +1,8 @@
 load('libs.js');
+load('config.js');
 
 function execute(key, page) {
 
-    var host = 'https://www.69shu.com';
 
     // gb18030, gbk uri encode
     // '打更人' --> '%B4%F2%B8%FC%C8%CB'

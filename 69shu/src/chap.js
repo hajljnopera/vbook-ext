@@ -1,7 +1,8 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    url = url.replace('m.69shu.com', 'www.69shu.com');
+    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, host);
 
     let response = fetch(url);
     if (response.ok) {
