@@ -1,9 +1,9 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    var host = 'https://www.69shu.com';
-    url = url.replace(/.+\.69shu\.com\/txt\/(.*?)\.htm/, 'https://www.69shu.com/txt/$1.htm');
-
+    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, host);
+    url = url.replace("/txt/","/book/")
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html('gbk');
