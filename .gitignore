@@ -6,3 +6,4 @@ data.json
 *.bak
 _*/
 .test
+.DS_Store
