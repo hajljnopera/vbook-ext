@@ -2,10 +2,10 @@
   "metadata": {
     "name": "piaotian5",
     "author": "hajljnopera",
-    "version": 4,
-    "source": "https://www.piaotian5.net",
-    "regexp": "(www|m)\\.piaotian5\\.(com|net)/book/\\d+\\.html$",
-    "description": "Đọc truyện trên trang https://www.piaotian5.net",
+    "version": 5,
+    "source": "https://www.piaotian55.net",
+    "regexp": "(www|m)\\.piaotian\\d+\\.(com|net)/book/\\d+\\.html$",
+    "description": "Đọc truyện trên trang https://www.piaotian55.net",
     "locale": "zh_CN",
     "language": "javascript",
     "type": "chinese_novel"

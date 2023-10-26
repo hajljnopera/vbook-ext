@@ -1,28 +1,30 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    var host = 'https://www.ptwxz.com';
-    // https://www.ptwxz.com/bookinfo/12/12450.html --> www.ptwxz.com/html/$1/$2/
-    url = url.replace(/www\.ptwxz\.com\/bookinfo\/(\d+)\/(\d+)\.html$/, 'www.ptwxz.com/html/$1/$2/').append('/');
+    // https://www.ptwxz.com/bookinfo/12/12450.html
+    // --> https://www.ptwxz.com/html/12/12450/
 
-    var response = fetch(url);
-    if (response.ok) {
-        var doc = response.html('gb2312');
+    url = BASE_URL + '/html/' + url.split('/bookinfo/')[1].split('.html')[0] + '/';
+    // log(url);
 
-        var data = [];
-        var elems = $.QA(doc, 'div.centent li > a');
+    let response = fetch(url);
+    if (!response.ok) return null;
 
-        if (!elems.length) return Response.error(url);
+    let doc = response.html('gb2312');
 
-        elems.forEach(function(e){
-            data.push({
-                name: e.text(),
-                url: e.attr('href').mayBeFillHost(url),
-                host: host
-            })
-        });
+    let data = [];
+    let elems = $.QA(doc, 'div.centent li > a');
 
-        return Response.success(data);
-    }
-    return null;
+    if (!elems.length) return Response.error(url);
+
+    elems.forEach(function(e){
+        data.push({
+            name: e.text(),
+            url: e.attr('href').mayBeFillHost(url),
+            host: BASE_URL,
+        })
+    });
+
+    return Response.success(data);
 }

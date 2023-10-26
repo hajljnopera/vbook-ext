@@ -124,7 +124,7 @@ var $ = {
         }
 
         var count = els.size();
-        
+
         if (o.reverse) {
             for (var i = count - 1; i >= 0; i--) {
                 var item = els.get(i);

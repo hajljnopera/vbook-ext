@@ -1,33 +1,38 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    const host = 'https://www.piaotian5.net';
-    url = url.replace('m.piaotian5.net', 'www.piaotian5.net');
+    url = url
+        .replace('m.piaotian5.net', 'www.piaotian5.net')
+        .replace('m.piaotian55.net', 'www.piaotian55.net')
 
     var response = fetch(url);
-    if (response.ok) {
-        var doc = response.html();
+    if (!response.ok) return null;
 
-        var data = [];
-        var elems = $.QA(doc, 'div.listmain dd > a');
+    var doc = response.html();
 
-        if (!elems.length) return Response.error(url);
+    var data = [];
+    var elems = $.QA(doc, '.listmain dd > a');
 
-        if (elems.length >= 6) {
-            elems.splice(0, 6); // Remove first 6 items
-        } else {
-            elems.splice(0, elems.length/2);
-        }
+    if (!elems.length) return Response.error(url);
 
-        elems.forEach(function(e){
-            data.push({
-                name: $.Q(e, 'a').text(),
-                url: e.attr('href'),
-                host: host
-            })
-        });
+    log(elems.length);
+    log(elems);
 
-        return Response.success(data);
+
+    if (elems.length >= 12) {
+        elems.splice(0, 12); // Remove first 12 最新章节
+    } else {
+        elems.splice(0, elems.length / 2);
     }
-    return null;
+
+    elems.forEach(function(e){
+        data.push({
+            name: $.Q(e, 'a').text(),
+            url: e.attr('href'),
+            host: BASE_URL
+        })
+    });
+
+    return Response.success(data);
 }

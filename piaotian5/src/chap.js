@@ -1,21 +1,20 @@
 load('libs.js');
+load('config.js');
 
 function execute(url) {
-    url = url.replace('m.piaotian5.net', 'www.piaotian5.net');
+    url = url
+        .replace('m.piaotian5.net', 'www.piaotian5.net')
+        .replace('m.piaotian55.net', 'www.piaotian55.net')
 
-    var response = fetch(url);
-    
-    if (response.ok) {
-        var doc = response.html();
+    let response = fetch(url);
+    if (!response.ok) return null;
 
-        var htm = $.Q(doc, '#content').html();
+    let doc = response.html();
 
-        htm = cleanHtml(htm)
-            .replace(/https.*piaotian5.*?(<br>|\n)/, '')
-            .replace(/天才一秒记住本站地址.*?(<br>|$)/, '')
-            ;
+    let htm = $.Q(doc, '#content', { remove: 'script' }).html();
 
-        return Response.success(htm);
-    }
-    return null;
+    htm = cleanHtml(htm)
+        .split('(https://www.piaotian')[0]
+
+    return Response.success(htm);
 }
