@@ -41,15 +41,6 @@
       "description": "Đọc truyện trên trang https://www.69shuba.com"
     },
     {
-      "name": "630shu",
-      "author": "hajljnopera",
-      "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/plugin.zip",
-      "version": 5,
-      "source": "https://www.630shu.net",
-      "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/630shu/icon.png",
-      "description": "Đọc truyện trên trang https://www.630shu.net"
-    },
-    {
       "name": "haitanglin",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/haitanglin/plugin.zip",
@@ -71,19 +62,19 @@
       "name": "piaotian5",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/plugin.zip",
-      "version": 4,
-      "source": "https://www.piaotian5.net",
+      "version": 5,
+      "source": "https://www.piaotian55.net",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/piaotian5/icon.png",
-      "description": "Đọc truyện trên trang https://www.piaotian5.net"
+      "description": "Đọc truyện trên trang https://www.piaotian55.net"
     },
     {
       "name": "ptwxz",
       "author": "hajljnopera",
       "path": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ptwxz/plugin.zip",
-      "version": 2,
-      "source": "https://www.ptwxz.com",
+      "version": 3,
+      "source": "https://www.piaotian.com",
       "icon": "https://raw.githubusercontent.com/hajljnopera/vbook-ext/main/ptwxz/icon.png",
-      "description": "Đọc truyện trên trang https://www.ptwxz.com"
+      "description": "Đọc truyện trên trang https://www.piaotian.com"
     },
     {
       "name": "quanben",
