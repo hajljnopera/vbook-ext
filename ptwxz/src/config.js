@@ -1,1 +1,7 @@
-let BASE_URL = 'https://www.piaotian.com';
+let BASE_URL = 'https://www.piaotia.com';
+try {
+    if (CONFIG_URL) {
+        BASE_URL = CONFIG_URL;
+    }
+} catch (error) {
+}

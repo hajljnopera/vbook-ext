@@ -2,9 +2,9 @@
   "metadata": {
     "name": "ptwxz",
     "author": "hajljnopera",
-    "version": 3,
-    "source": "https://www.piaotian.com",
-    "regexp": "www\\.(ptwxz|piaotian)\\.com/bookinfo/\\d+/\\d+\\.html$",
+    "version": 4,
+    "source": "https://www.piaotia.com",
+    "regexp": "www\\.(ptwxz|piaotian|piaotia)\\.com/bookinfo/\\d+/\\d+\\.html$",
     "description": "Đọc truyện trên trang ptwxz",
     "locale": "zh_CN",
     "language": "javascript",
