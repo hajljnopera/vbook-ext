@@ -2,7 +2,7 @@
   "metadata": {
     "name": "qidian",
     "author": "hajljnopera",
-    "version": 11,
+    "version": 12,
     "source": "https://www.qidian.com",
     "regexp": "(book|m|www)\\.qidian\\.com/(info|book)/(.*?)",
     "description": "Đọc truyện trên trang https://www.qidian.com. \n(Giới hạn chỉ đọc được chương free)",
