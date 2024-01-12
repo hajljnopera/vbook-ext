@@ -2,7 +2,7 @@
   "metadata": {
     "name": "69shu",
     "author": "hajljnopera",
-    "version": 5,
+    "version": 6,
     "source": "https://www.69shuba.com",
     "regexp": "(www|m).(69shu|69shuba)\\.com/(txt|book)/.*?\\.htm",
     "description": "Đọc truyện trên trang 69shuba.com",
