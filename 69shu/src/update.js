@@ -2,7 +2,7 @@ load('libs.js');
 load('config.js');
 
 function execute(url, page) {
-    url = host + url;
+    url = BASE_URL + url;
 
     let response = fetch(url);
     if (response.ok) {
@@ -16,7 +16,7 @@ function execute(url, page) {
             var link = $.Q(e, 'a').attr('href');
             var m, id, cover;
 
-            if ((m = link.match(/.+\.69shuba\.com\/book\/(.*?)\.htm/)) && m[1] && (id = m[1])) {
+            if ((m = link.match(/.+\.69xinshu\.com\/book\/(.*?)\.htm/)) && m[1] && (id = m[1])) {
                 cover = String.format('{0}/files/article/image/{1}/{2}/{3}s.jpg', "https://cdn.shucdn.com", Math.floor(id / 1000), id, id);
             }
 
@@ -25,7 +25,7 @@ function execute(url, page) {
                 link: link,
                 cover: cover || '',
                 description: $.Q(e, 'a', 1).text(),
-                host: host
+                host: BASE_URL
             })
         })
 

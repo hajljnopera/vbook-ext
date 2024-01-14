@@ -6,7 +6,7 @@ function execute(url) {
     const match = url.match(regex);
     let book_id = match[1];
     console.log(book_id)
-    let response = fetch(host + "/book/" + book_id +"/");
+    let response = fetch(BASE_URL + "/book/" + book_id +"/");
     if (response.ok) {
         let doc = response.html('gbk');
 
@@ -17,7 +17,7 @@ function execute(url) {
 			data.push({
 				name: formatName(e.text()),
 				url: e.attr('href'),
-				host: host
+				host: BASE_URL
 			})
 		});
 
