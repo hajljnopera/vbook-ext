@@ -3,7 +3,7 @@ load('config.js');
 
 function execute(url, page) {
     page = page || '1';
-    url = String.format(host + url, page);
+    url = String.format(BASE_URL + url, page);
     console.log(url)
     // log(url);
     let response = fetch(url);
@@ -18,7 +18,7 @@ function execute(url, page) {
                 link: $.Q(e, 'h3 > a').attr('href'),
                 cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
                 description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
-                host: host
+                host: BASE_URL
             })
         })
         var next = parseInt(page, 10) + 1;

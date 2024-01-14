@@ -16,7 +16,7 @@ function execute(url, page) {
                 link: e.select("h3 a").attr('href'),
                 cover: e.select("img").attr('data-src').trim(),
                 description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
-                host: host
+                host: BASE_URL
             })
         })
         return Response.success(data);

@@ -29,7 +29,7 @@ function execute(key, page) {
                     link: $.Q(e, '.newnav > a').attr('href'),
                     cover: $.Q(e, '.imgbox > img').attr('data-src').trim(),
                     description: $.Q(e, '.zxzj > p').text().replace('最近章节', ''),
-                    host: host
+                    host: BASE_URL
                 })
             })
 
@@ -44,7 +44,7 @@ function execute(key, page) {
                 link: $.Q(doc, 'div.booknav2 > h1 > a').attr('href'),
                 cover: $.Q(doc, 'div.bookimg2 > img').attr('src'),
                 description: $.Q(doc, 'div.booknav2 > p:nth-child(2) > a').text().trim(), // author
-                host: host
+                host: BASE_URL
             }]);
         }
 
