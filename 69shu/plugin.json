@@ -2,9 +2,9 @@
   "metadata": {
     "name": "69shu - repo Đường đen",
     "author": "hajljnopera",
-    "version": 8,
-    "source": "https://www.69xinshu.com",
-    "regexp": "(www|m).(69shu|69shuba|69xinshu)\\.com/(txt|book)/.*?\\.htm",
+    "version": 11,
+    "source": "https://www.69shu.pro",
+    "regexp": "(www|m).(69shu|69shuba|69xinshu)\\.(.*?)/(txt|book)/.*?\\.htm",
     "description": "Đọc truyện trên trang 69shuba.com",
     "locale": "zh_CN",
     "language": "javascript",
