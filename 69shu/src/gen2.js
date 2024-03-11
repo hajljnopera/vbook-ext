@@ -2,7 +2,7 @@ load('libs.js');
 load('config.js');
 
 function execute(url, page) {
-    url = String.format(url + "/");
+    url = String.format(BASE_URL + "/newtag" + url);
     console.log(url)
     // log(url);
     let response = fetch(url);
